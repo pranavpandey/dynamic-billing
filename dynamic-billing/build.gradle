@@ -40,7 +40,52 @@ android {
 }
 
 dependencies {
-    compileOnly "com.pranavpandey.android:dynamic-support:${versions.support}"
+    implementation "com.pranavpandey.android:dynamic-support:${versions.support}"
     api "com.pranavpandey.android:dynamic-utils:${versions.dynamic}"
     api "com.android.billingclient:billing:${versions.billing}"
+}
+
+if (project.rootProject.file("${publication}").exists()) {
+    apply from: 'maven.gradle'
+}
+
+task generateJavadoc() {
+    description "Generates Javadoc."
+}
+
+project.afterEvaluate {
+    android.libraryVariants.all { variant ->
+        def task = project.tasks.create("generate${variant.name.capitalize()}Javadoc", Javadoc) {
+            title "${referenceTitle}"
+            description "Generates Javadoc for $variant.name."
+            destinationDir = new File(destinationDir, variant.baseName)
+
+            source = variant.sourceSets.collect { it.java.sourceFiles }.inject { m, i -> m + i }
+            doFirst {
+                classpath = project.files(variant.javaCompileProvider.get().classpath.files,
+                        project.android.getBootClasspath())
+            }
+
+            if (JavaVersion.current().isJava8Compatible()) {
+                options.addStringOption('Xdoclint:none', '-quiet')
+            }
+
+            exclude "**/R", "**/R.**", "**/R\$**", "**/BuildConfig*"
+
+            if (JavaVersion.current().isJava8Compatible()) {
+                options.addStringOption('Xdoclint:none', '-quiet')
+            }
+
+            options.windowTitle = "${referenceTitle}"
+            options.footer = "<h5>${mavenVersion}</h5>"
+            options.links('http://docs.oracle.com/javase/8/docs/api')
+            options.links('https://developer.android.com/reference')
+            options.memberLevel = JavadocMemberLevel.PROTECTED
+
+            failOnError false
+        }
+
+        task.dependsOn "assemble${variant.name.capitalize()}"
+        generateJavadoc.dependsOn task
+    }
 }
