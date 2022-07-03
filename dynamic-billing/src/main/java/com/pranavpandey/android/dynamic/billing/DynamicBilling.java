@@ -549,6 +549,8 @@ public class DynamicBilling {
     /**
      * Try to find the dynamic feature for the supplied id.
      *
+     * @param id The feature id to be used.
+     *
      * @return The dynamic feature for the supplied id if found,
      *         otherwise {@link DynamicFeature#UNKNOWN} feature.
      */
