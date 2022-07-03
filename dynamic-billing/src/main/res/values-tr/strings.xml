@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">Faturalandırma</string>
+    <string name="adb_payments">Ödemeler</string>
+    <string name="adb_restore">Geri yükle</string>
+    <string name="adb_product">Ürün</string>
+    <string name="adb_feature">Özellik</string>
+    <string name="adb_features">Özellikler</string>
+    <string name="adb_subscription">Abonelik</string>
+    <string name="adb_buy">Satın al</string>
+    <string name="adb_purchase">Satın alma</string>
+    <string name="adb_purchases">Satın alınanlar</string>
+    <string name="adb_subscribe">Abone ol</string>
+    <string name="adb_active">Etkin</string>
+    <string name="adb_cancel">İptal</string>
+    <string name="adb_change">Değiştir</string>
+    <string name="adb_migrate">Taşıma</string>
+
+    <!-- Query -->
+    <string name="adb_restore_done">Satın alınanlar başarıyla geri yüklendi.</string>
+    <string name="adb_update_done">Satın alınanlar başarıyla güncellendi.</string>
+    <string name="adb_restore_error">Satın alma bulunamadı.</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">Yeniden dene</string>
+    <string name="adb_error_connection">Faturalandırma hizmetine bağlanılamıyor.</string>
+
+</resources>

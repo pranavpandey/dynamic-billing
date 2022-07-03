@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">Abrechnung</string>
+    <string name="adb_payments">Zahlungen</string>
+    <string name="adb_restore">Wiederherstellen</string>
+    <string name="adb_product">Produkt</string>
+    <string name="adb_feature">Funktion</string>
+    <string name="adb_features">Funktionen</string>
+    <string name="adb_subscription">Abonnement</string>
+    <string name="adb_buy">Kaufen</string>
+    <string name="adb_purchase">Kauf</string>
+    <string name="adb_purchases">Käufe</string>
+    <string name="adb_subscribe">Abonnieren</string>
+    <string name="adb_active">Aktiv</string>
+    <string name="adb_cancel">Abbrechen</string>
+    <string name="adb_change">Ändern</string>
+    <string name="adb_migrate">Migration</string>
+
+    <!-- Query -->
+    <string name="adb_restore_done">Einkäufe erfolgreich wiederhergestellt.</string>
+    <string name="adb_update_done">Käufe erfolgreich aktualisiert.</string>
+    <string name="adb_restore_error">Keine Einkäufe gefunden.</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">Wiederholen</string>
+    <string name="adb_error_connection">Kann keine Verbindung zum Abrechnungsdienst herstellen.</string>
+
+</resources>

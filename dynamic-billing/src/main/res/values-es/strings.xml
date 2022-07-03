@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">Facturación</string>
+    <string name="adb_payments">Pagos</string>
+    <string name="adb_restore">Restaurar</string>
+    <string name="adb_product">Producto</string>
+    <string name="adb_feature">Característica</string>
+    <string name="adb_features">Características</string>
+    <string name="adb_subscription">Suscripción</string>
+    <string name="adb_buy">Comprar</string>
+    <string name="adb_purchase">Comprar</string>
+    <string name="adb_purchases">Compras</string>
+    <string name="adb_subscribe">Suscribirse</string>
+    <string name="adb_active">Activo</string>
+    <string name="adb_cancel">Cancelar</string>
+    <string name="adb_change">Cambiar</string>
+    <string name="adb_migrate">Migrar</string>
+
+    <!-- Query -->
+    <string name="adb_restore_done">Compras restauradas con éxito.</string>
+    <string name="adb_update_done">Compras actualizadas con éxito.</string>
+    <string name="adb_restore_error">No se encontraron compras.</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">Reintentar</string>
+    <string name="adb_error_connection">No se pudo conectar al servicio de facturación.</string>
+
+</resources>

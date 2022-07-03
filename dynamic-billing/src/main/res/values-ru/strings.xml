@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">Оплата</string>
+    <string name="adb_payments">Платежи</string>
+    <string name="adb_restore">Восстановить</string>
+    <string name="adb_product">Продукт</string>
+    <string name="adb_feature">Функция</string>
+    <string name="adb_features">Функции</string>
+    <string name="adb_subscription">Подписка</string>
+    <string name="adb_buy">Купить</string>
+    <string name="adb_purchase">Покупка</string>
+    <string name="adb_purchases">Покупки</string>
+    <string name="adb_subscribe">Подписаться</string>
+    <string name="adb_active">Активный</string>
+    <string name="adb_cancel">Отменить</string>
+    <string name="adb_change">Изменить</string>
+    <string name="adb_migrate">Перенести</string>
+
+    <!-- Query -->
+    <string name="adb_restore_done">Покупки успешно восстановлены.</string>
+    <string name="adb_update_done">Покупки успешно обновлены.</string>
+    <string name="adb_restore_error">Покупки не найдены.</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">Повторить попытку</string>
+    <string name="adb_error_connection">Не удалось подключиться к биллинговой службе.</string>
+
+</resources>

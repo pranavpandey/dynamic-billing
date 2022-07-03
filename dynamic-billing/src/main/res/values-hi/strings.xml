@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">बिलिंग</string>
+    <string name="adb_payments">भुगतान</string>
+    <string name="adb_restore">पुनर्स्थापित करें</string>
+    <string name="adb_product">उत्पाद</string>
+    <string name="adb_feature">सुविधा</string>
+    <string name="adb_features">विशेषताएं</string>
+    <string name="adb_subscription">सदस्यता</string>
+    <string name="adb_buy">खरीदें</string>
+    <string name="adb_purchase">खरीदें</string>
+    <string name="adb_purchases">खरीदारी</string>
+    <string name="adb_subscribe">सदस्यता लें</string>
+    <string name="adb_active">सक्रिय</string>
+    <string name="adb_cancel">रद्द करें</string>
+    <string name="adb_change">बदलें</string>
+    <string name="adb_migrate">माइग्रेट करें</string>
+
+    <!-- Query -->
+    <string name="adb_restore_done">खरीदारी सफलतापूर्वक बहाल हो गई।</string>
+    <string name="adb_update_done">खरीदारी सफलतापूर्वक अपडेट की गई।</string>
+    <string name="adb_restore_error">कोई खरीदारी नहीं मिली।</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">पुन: प्रयास करें</string>
+    <string name="adb_error_connection">बिलिंग सेवा से जुड़ने में असमर्थ।</string>
+
+</resources>

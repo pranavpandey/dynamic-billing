@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">Penagihan</string>
+    <string name="adb_payments">Pembayaran</string>
+    <string name="adb_restore">Pulihkan</string>
+    <string name="adb_product">Produk</string>
+    <string name="adb_feature">Fitur</string>
+    <string name="adb_features">Fitur</string>
+    <string name="adb_subscription">Langganan</string>
+    <string name="adb_buy">Beli</string>
+    <string name="adb_purchase">Beli</string>
+    <string name="adb_purchases">Pembelian</string>
+    <string name="adb_subscribe">Berlangganan</string>
+    <string name="adb_active">Aktif</string>
+    <string name="adb_cancel">Batal</string>
+    <string name="adb_change">Ubah</string>
+    <string name="adb_migrate">Migrasi</string>
+
+    <!-- Query -->
+    <string name="adb_restore_done">Pembelian berhasil dipulihkan.</string>
+    <string name="adb_update_done">Purchases updated successfully.</string>
+    <string name="adb_restore_error">Tidak ada pembelian yang ditemukan.</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">Coba lagi</string>
+    <string name="adb_error_connection">Tidak dapat terhubung ke layanan penagihan.</string>
+
+</resources>

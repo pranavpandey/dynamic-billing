@@ -1,0 +1,111 @@
+/*
+ * Copyright 2022 Pranav Pandey
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+buildscript {
+    ext.versions = [
+            'compileSdk': 33,
+            'minSdk'    : 16,
+            'targetSdk' : 33,
+            'buildTools': '33.0.0',
+            'billing'   : '5.0.0',
+            'dynamic'   : '4.4.3',
+			'support'   : '6.0.0'
+    ]
+
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.0-alpha07'
+    }
+}
+
+plugins {
+    id("io.github.gradle-nexus.publish-plugin") version "1.1.0"
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    projectName = 'dynamic-billing'
+    projectDesc = 'A library to implement Google Play in-app products and subscriptions ' +
+            'on Android.'
+    versionDesc = 'A library to implement Google Play in-app products and subscriptions ' +
+            'on Android 4.1 (API 16) and above.'
+    referenceTitle = 'Dynamic Billing API reference'
+
+    siteUrl = 'https://github.com/pranavpandey/dynamic-billing'
+    gitUrl = 'https://github.com/pranavpandey/dynamic-billing'
+    issueUrl = 'https://github.com/pranavpandey/dynamic-billing/issues'
+    githubUrl = 'pranavpandey/dynamic-billing'
+
+    mavenRepo = 'android'
+    mavenGroup = 'com.pranavpandey.android'
+    mavenDir = 'com/pranavpandey/android'
+    mavenArtifactId = 'dynamic-billing'
+    mavenInceptionYear = '2022'
+    mavenVersion = '1.0.0'
+    mavenVersionCode = 1
+
+    developerId = 'pranavpandey'
+    developerName = 'Pranav Pandey'
+    developerEmail = 'pranavpande92@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    licenseDistribution = 'repo'
+    allLicenses = ["Apache-2.0"]
+
+    publication = 'local.properties'
+
+    ext["signing.keyId"] = ''
+    ext["signing.password"] = ''
+    ext["signing.secretKeyRingFile"] = ''
+
+    ossrhUsername = ''
+    ossrhPassword = ''
+    sonatypeStagingProfileId = ''
+}
+
+apply plugin: 'io.github.gradle-nexus.publish-plugin'
+
+File publish = project.rootProject.file("${publication}")
+if (publish.exists()) {
+    Properties properties = new Properties()
+    new FileInputStream(publish).withCloseable { is -> properties.load(is) }
+    properties.each { name, value -> ext[name] = value }
+}
+
+nexusPublishing {
+    repositories {
+        sonatype {
+            username = ossrhUsername
+            password = ossrhPassword
+            stagingProfileId = sonatypeStagingProfileId
+        }
+    }
+}
