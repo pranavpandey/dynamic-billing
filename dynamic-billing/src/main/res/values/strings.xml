@@ -34,7 +34,11 @@
     <string name="adb_change">Change</string>
     <string name="adb_migrate">Migrate</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">Payment will be charged to your Google Play account at the end of the free trial or confirmation of purchase if you are not starting a trial.</string>
+    <string name="adb_disclaimer_subscription">Subscription will automatically renew unless it is canceled at least 24 hours before the end of your free trial or current period.</string>
+    <string name="adb_disclaimer_renewal">Your account will be charged for renewal within 24 hours prior to the end of the current period.</string>
+    <string name="adb_disclaimer_cancel">You can manage or cancel the subscriptions at any time in Google Play settings.</string>
     <string name="adb_restore_done">Purchases restored successfully.</string>
     <string name="adb_update_done">Purchases updated successfully.</string>
     <string name="adb_restore_error">No purchases found.</string>

@@ -34,7 +34,11 @@
     <string name="adb_change">बदलें</string>
     <string name="adb_migrate">माइग्रेट करें</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">यदि आप परीक्षण शुरू नहीं कर रहे हैं तो नि: शुल्क परीक्षण या खरीद की पुष्टि के अंत में आपके Google Play खाते से भुगतान लिया जाएगा।</string>
+    <string name="adb_disclaimer_subscription">सदस्यता स्वचालित रूप से नवीनीकृत हो जाएगी जब तक कि इसे आपके नि: शुल्क परीक्षण या वर्तमान अवधि के अंत से कम से कम 24 घंटे पहले रद्द नहीं किया जाता है।</string>
+    <string name="adb_disclaimer_renewal">आपके खाते से वर्तमान अवधि की समाप्ति से 24 घंटे पहले नवीनीकरण के लिए शुल्क लिया जाएगा।</string>
+    <string name="adb_disclaimer_cancel">आप Google Play सेटिंग में किसी भी समय सदस्यता को प्रबंधित या रद्द कर सकते हैं।</string>
     <string name="adb_restore_done">खरीदारी सफलतापूर्वक बहाल हो गई।</string>
     <string name="adb_update_done">खरीदारी सफलतापूर्वक अपडेट की गई।</string>
     <string name="adb_restore_error">कोई खरीदारी नहीं मिली।</string>

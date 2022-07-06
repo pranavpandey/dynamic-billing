@@ -34,7 +34,11 @@
     <string name="adb_change">Изменить</string>
     <string name="adb_migrate">Перенести</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">Оплата будет снята с вашей учетной записи Google Play в конце бесплатного пробного периода или подтверждения покупки, если вы не начинаете пробный период.</string>
+    <string name="adb_disclaimer_subscription">Подписка будет автоматически продлена, если она не будет отменена по крайней мере за 24 часа до окончания бесплатного пробного периода или текущего периода.</string>
+    <string name="adb_disclaimer_renewal">С вашего счета будет взиматься плата за продление в течение 24 часов до окончания текущего периода.</string>
+    <string name="adb_disclaimer_cancel">Вы можете управлять подписками или отменить их в любое время в настройках Google Play.</string>
     <string name="adb_restore_done">Покупки успешно восстановлены.</string>
     <string name="adb_update_done">Покупки успешно обновлены.</string>
     <string name="adb_restore_error">Покупки не найдены.</string>

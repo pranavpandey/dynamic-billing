@@ -34,7 +34,11 @@
     <string name="adb_change">Değiştir</string>
     <string name="adb_migrate">Taşıma</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">Deneme sürümünü başlatmıyorsanız, ücretsiz denemenin sonunda veya satın alma onayının sonunda ödeme Google Play hesabınızdan tahsil edilecektir.</string>
+    <string name="adb_disclaimer_subscription">Abonelik, ücretsiz deneme sürenizin veya mevcut sürenizin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenecektir.</string>
+    <string name="adb_disclaimer_renewal">Cari dönemin bitiminden 24 saat önce hesabınızdan yenileme ücreti alınacaktır.</string>
+    <string name="adb_disclaimer_cancel">Abonelikleri istediğiniz zaman Google Play ayarlarından yönetebilir veya iptal edebilirsiniz.</string>
     <string name="adb_restore_done">Satın alınanlar başarıyla geri yüklendi.</string>
     <string name="adb_update_done">Satın alınanlar başarıyla güncellendi.</string>
     <string name="adb_restore_error">Satın alma bulunamadı.</string>

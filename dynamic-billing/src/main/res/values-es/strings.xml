@@ -34,7 +34,11 @@
     <string name="adb_change">Cambiar</string>
     <string name="adb_migrate">Migrar</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">El pago se cargará a su cuenta de Google Play al final de la prueba gratuita o la confirmación de la compra si no está iniciando una prueba.</string>
+    <string name="adb_disclaimer_subscription">La suscripción se renovará automáticamente a menos que se cancele al menos 24 horas antes del final de su prueba gratuita o del período actual.</string>
+    <string name="adb_disclaimer_renewal">Se le cobrará a su cuenta la renovación dentro de las 24 horas anteriores al final del período actual.</string>
+    <string name="adb_disclaimer_cancel">Puede administrar o cancelar las suscripciones en cualquier momento en la configuración de Google Play.</string>
     <string name="adb_restore_done">Compras restauradas con éxito.</string>
     <string name="adb_update_done">Compras actualizadas con éxito.</string>
     <string name="adb_restore_error">No se encontraron compras.</string>

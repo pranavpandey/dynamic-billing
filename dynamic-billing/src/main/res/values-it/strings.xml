@@ -34,7 +34,11 @@
     <string name="adb_change">Cambia</string>
     <string name="adb_migrate">Migra</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">Il pagamento verrà addebitato sul tuo account Google Play al termine della prova gratuita o alla conferma dell\'acquisto se non stai iniziando una prova.</string>
+    <string name="adb_disclaimer_subscription">L\'abbonamento si rinnoverà automaticamente a meno che non venga annullato almeno 24 ore prima della fine della prova gratuita o del periodo corrente.</string>
+    <string name="adb_disclaimer_renewal">Il tuo account verrà addebitato per il rinnovo entro 24 ore prima della fine del periodo corrente.</string>
+    <string name="adb_disclaimer_cancel">Puoi gestire o annullare gli abbonamenti in qualsiasi momento nelle impostazioni di Google Play.</string>
     <string name="adb_restore_done">Acquisti ripristinati con successo.</string>
     <string name="adb_update_done">Purchases updated successfully.</string>
     <string name="adb_restore_error">Nessun acquisto trovato.</string>

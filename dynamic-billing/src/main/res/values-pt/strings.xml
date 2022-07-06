@@ -34,7 +34,11 @@
     <string name="adb_change">Alterar</string>
     <string name="adb_migrate">Migrar</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">O pagamento será cobrado na sua conta do Google Play no final da avaliação gratuita ou na confirmação da compra, caso você não esteja iniciando uma avaliação.</string>
+    <string name="adb_disclaimer_subscription">A assinatura será renovada automaticamente, a menos que seja cancelada pelo menos 24 horas antes do final de sua avaliação gratuita ou período atual.</string>
+    <string name="adb_disclaimer_renewal">Sua conta será cobrada pela renovação dentro de 24 horas antes do final do período atual.</string>
+    <string name="adb_disclaimer_cancel">Você pode gerenciar ou cancelar as assinaturas a qualquer momento nas configurações do Google Play.</string>
     <string name="adb_restore_done">Compras restauradas com sucesso.</string>
     <string name="adb_update_done">Compras atualizadas com sucesso.</string>
     <string name="adb_restore_error">Nenhuma compra encontrada.</string>

@@ -34,7 +34,11 @@
     <string name="adb_change">更改</string>
     <string name="adb_migrate">迁移</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">如果您没有开始试用，则在免费试用结束或确认购买时，将向您的 Google Play 帐户收取费用。</string>
+    <string name="adb_disclaimer_subscription">订阅将自动续订，除非在免费试用期或当前期限结束前至少 24 小时取消。</string>
+    <string name="adb_disclaimer_renewal">您的帐户将在当前期限结束前 24 小时内收取续订费用。</string>
+    <string name="adb_disclaimer_cancel">您可以随时在 Google Play 设置中管理或取消订阅。</string>
     <string name="adb_restore_done">购买恢复成功。</string>
     <string name="adb_update_done">购买更新成功。</string>
     <string name="adb_restore_error">未找到购买。</string>

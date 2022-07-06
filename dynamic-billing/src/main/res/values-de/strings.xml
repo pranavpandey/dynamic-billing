@@ -34,7 +34,11 @@
     <string name="adb_change">Ändern</string>
     <string name="adb_migrate">Migration</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">Die Zahlung wird Ihrem Google Play-Konto am Ende der kostenlosen Testversion oder der Kaufbestätigung belastet, wenn Sie keine Testversion starten.</string>
+    <string name="adb_disclaimer_subscription">Das Abonnement verlängert sich automatisch, wenn es nicht mindestens 24 Stunden vor dem Ende Ihrer kostenlosen Testversion oder des aktuellen Zeitraums gekündigt wird.</string>
+    <string name="adb_disclaimer_renewal">Ihr Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums für die Verlängerung belastet.</string>
+    <string name="adb_disclaimer_cancel">Sie können die Abonnements jederzeit in den Google Play-Einstellungen verwalten oder kündigen.</string>
     <string name="adb_restore_done">Einkäufe erfolgreich wiederhergestellt.</string>
     <string name="adb_update_done">Käufe erfolgreich aktualisiert.</string>
     <string name="adb_restore_error">Keine Einkäufe gefunden.</string>

@@ -34,7 +34,11 @@
     <string name="adb_change">Ubah</string>
     <string name="adb_migrate">Migrasi</string>
 
-    <!-- Query -->
+    <!-- Info -->
+    <string name="adb_disclaimer_payment">Pembayaran akan dibebankan ke akun Google Play Anda di akhir uji coba gratis atau konfirmasi pembelian jika Anda tidak memulai uji coba.</string>
+    <string name="adb_disclaimer_subscription">Langganan akan diperpanjang secara otomatis kecuali dibatalkan setidaknya 24 jam sebelum akhir uji coba gratis atau periode berjalan Anda.</string>
+    <string name="adb_disclaimer_renewal">Akun Anda akan dikenakan biaya untuk pembaruan dalam waktu 24 jam sebelum akhir periode berjalan.</string>
+    <string name="adb_disclaimer_cancel">Anda dapat mengelola atau membatalkan langganan kapan saja di setelan Google Play.</string>
     <string name="adb_restore_done">Pembelian berhasil dipulihkan.</string>
     <string name="adb_update_done">Purchases updated successfully.</string>
     <string name="adb_restore_error">Tidak ada pembelian yang ditemukan.</string>
