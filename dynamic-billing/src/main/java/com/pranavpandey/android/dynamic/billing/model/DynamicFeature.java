@@ -40,7 +40,7 @@ import java.util.List;
 public class DynamicFeature implements Parcelable, DynamicBillingListener {
 
     /**
-     * Constant id for the unknown product.
+     * Constant id for the unknown feature.
      */
     public static final String UNKNOWN = "adb_feature_unknown";
 
