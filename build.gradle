@@ -21,8 +21,8 @@ buildscript {
             'targetSdk' : 33,
             'buildTools': '33.0.0',
             'billing'   : '5.0.0',
-            'dynamic'   : '4.4.3',
-			'support'   : '6.0.0'
+            'dynamic'   : '4.4.5',
+			'support'   : '6.0.3'
     ]
 
     repositories {
@@ -68,8 +68,8 @@ ext {
     mavenDir = 'com/pranavpandey/android'
     mavenArtifactId = 'dynamic-billing'
     mavenInceptionYear = '2022'
-    mavenVersion = '1.0.0'
-    mavenVersionCode = 1
+    mavenVersion = '1.0.1'
+    mavenVersionCode = 2
 
     developerId = 'pranavpandey'
     developerName = 'Pranav Pandey'
