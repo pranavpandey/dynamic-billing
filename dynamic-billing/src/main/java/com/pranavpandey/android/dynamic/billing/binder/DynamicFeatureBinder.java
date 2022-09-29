@@ -23,6 +23,8 @@ import androidx.annotation.NonNull;
 
 import com.pranavpandey.android.dynamic.billing.R;
 import com.pranavpandey.android.dynamic.billing.adapter.DynamicFeaturesAdapter;
+import com.pranavpandey.android.dynamic.support.Defaults;
+import com.pranavpandey.android.dynamic.support.Dynamic;
 import com.pranavpandey.android.dynamic.support.model.DynamicInfo;
 import com.pranavpandey.android.dynamic.support.recyclerview.binder.factory.InfoBigBinder;
 import com.pranavpandey.android.dynamic.support.recyclerview.binder.factory.InfoBinder;
@@ -42,5 +44,13 @@ public class DynamicFeatureBinder extends InfoBinder<String> {
     public @NonNull ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(
                 R.layout.adb_layout_feature_card, parent, false));
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        super.onBindViewHolder(holder, position);
+
+        Dynamic.setColorType(holder.getDynamicInfo().getIconView(),
+                Defaults.ADS_COLOR_TYPE_ICON);
     }
 }
