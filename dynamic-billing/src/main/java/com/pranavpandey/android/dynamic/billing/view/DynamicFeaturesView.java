@@ -72,9 +72,9 @@ public abstract class DynamicFeaturesView extends DynamicRecyclerViewNested {
     }
 
     /**
-     * Returns a list of dynamic features to be displayed ny this view.
+     * Returns a list of dynamic features to be displayed by this view.
      *
-     * @return The list of dynamic features to be displayed ny this view.
+     * @return The list of dynamic features to be displayed by this view.
      */
     public abstract @NonNull List<DynamicFeature> getFeatures();
 
