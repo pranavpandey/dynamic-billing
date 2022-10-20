@@ -17,8 +17,10 @@ A library to implement Google Play in-app products and subscriptions on Android
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Sponsor](#sponsor)
-  - [Dependency](#dependency)
+    - [Initialize](#initialize)
+    - [Listener](#listener)
+    - [Sponsor](#sponsor)
+    - [Dependency](#dependency)
 - [License](#license)
 
 ---
@@ -44,6 +46,82 @@ or `subscription` that can be linked to a `feature` so that it can be enabled on
 a successful purchase.
 
 > For a complete reference, please read the [documentation][documentation].
+
+### Initialize
+
+`DynamicBilling` must be initialized once before accessing its methods. Dynamic ad formats do that
+automatically before doing any operations but it should be done manually if anything has to be
+done before.
+
+> Please make sure that you have enabled [Google Play Billing][google play billing] for your app
+and have in-app products or subscriptions properly setup within the console.
+
+```java
+// Initialize with application context.
+DynamicBilling.initializeInstance(applicationContext);
+```
+
+### Listener
+
+`DynamicBillingListener` is an `interface` that can be implemented by the `application` or
+`activity` class to perform various operations and receive `billing` callbacks.
+
+```java
+/**
+ * An activity implementing the dynamic billing listener.
+ */
+public class BillingActivity extends Activity implements DynamicBillingListener {
+
+    ...
+
+    @Override
+    public void onBillingServiceDisconnected() { }
+
+    @Override
+    public void onBillingSetupFinished(@NonNull BillingResult billingResult) { 
+        // Try to query available products from the billing library.
+        DynamicBilling.getInstance().queryProductDetailsAsync(
+                QueryProductDetailsParams.newBuilder()
+                        .setProductList(Arrays.asList(
+                                QueryProductDetailsParams.Product.newBuilder()
+                                        .setProductId(Feature.ID)
+                                        .setProductType(Feature.TYPE)
+                                        .build()
+                        )).build());
+
+        // Try to query the user purchases.
+        DynamicBilling.getInstance().queryPurchasesAsync(Subscription.QUERY_PURCHASES_PARAMS);
+    }
+
+    @Override
+    public void onPurchasesUpdated(@NonNull BillingResult billingResult,
+            @Nullable List<Purchase> purchases) {
+        // Update products state according to the user purchases.
+    }
+
+    @Override
+    public void onProductDetailsResponse(@NonNull BillingResult billingResult,
+            @NonNull List<ProductDetails> productDetails) { 
+        // Show available products to the user.
+    }
+
+    @Override
+    public void onQueryPurchasesResponse(@NonNull BillingResult billingResult,
+            @NonNull List<Purchase> purchases) {
+        // Update products state according to the user purchases.
+    }
+  
+    @Override
+    public void onConsumeResponse(@NonNull BillingResult billingResult,
+            @NonNull String purchaseToken) { }
+  
+    @Override
+    public void onAcknowledgePurchaseResponse(@NonNull BillingResult billingResult) {
+        // Automatically acknowledge purchases if required.
+        DynamicBilling.getInstance().acknowledgePurchases(billingResult, purchases);
+    }
+}
+```
 
 ### Sponsor
 
@@ -86,6 +164,7 @@ Pranav Pandey
 [androidx]: https://developer.android.com/jetpack/androidx
 [androidx-migrate]: https://developer.android.com/jetpack/androidx/migrate
 [documentation]: https://pranavpandey.github.io/dynamic-billing
+[google play billing]: https://developer.android.com/google/play/billing/integrate
 [sponsor]: https://github.com/sponsors/pranavpandey
 [dynamic-utils]: https://github.com/pranavpandey/dynamic-utils
 [dynamic-support]: https://github.com/pranavpandey/dynamic-support
