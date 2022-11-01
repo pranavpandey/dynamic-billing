@@ -49,9 +49,7 @@ a successful purchase.
 
 ### Initialize
 
-`DynamicBilling` must be initialized once before accessing its methods. Dynamic ad formats do that
-automatically before doing any operations but it should be done manually if anything has to be
-done before.
+`DynamicBilling` must be initialized once before accessing its methods.
 
 > Please make sure that you have enabled [Google Play Billing][google play billing] for your app
 and have in-app products or subscriptions properly setup within the console.
