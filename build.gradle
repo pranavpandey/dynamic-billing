@@ -20,7 +20,7 @@ buildscript {
             'minSdk'    : 16,
             'targetSdk' : 33,
             'buildTools': '33.0.0',
-            'billing'   : '5.0.0',
+            'billing'   : '5.1.0',
             'dynamic'   : '4.4.6',
             'support'   : '6.1.0'
     ]
