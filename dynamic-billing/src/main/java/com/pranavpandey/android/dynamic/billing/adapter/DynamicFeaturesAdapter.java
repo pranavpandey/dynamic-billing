@@ -32,6 +32,11 @@ import java.util.List;
 public class DynamicFeaturesAdapter extends
         SimpleDataBinderAdapter<List<DynamicInfo>, DynamicFeatureBinder> {
 
+    /**
+     * Constructor to initialize an object of this class.
+     *
+     * @param data The data for this adapter.
+     */
     public DynamicFeaturesAdapter(@Nullable List<DynamicInfo> data) {
         addDataBinder(new DynamicFeatureBinder(this));
         setData(data);

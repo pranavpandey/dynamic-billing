@@ -36,6 +36,11 @@ import com.pranavpandey.android.dynamic.support.recyclerview.binder.factory.Info
  */
 public class DynamicFeatureBinder extends InfoBinder<String> {
 
+    /**
+     * Constructor to initialize an object of this class.
+     *
+     * @param binderAdapter The dynamic features adapter for the recycler view.
+     */
     public DynamicFeatureBinder(@NonNull DynamicFeaturesAdapter binderAdapter) {
         super(binderAdapter);
     }
