@@ -32,7 +32,7 @@ It can be installed by adding the following dependency to your `build.gradle` fi
 ```groovy
 dependencies {
     // For AndroidX enabled projects.
-    implementation 'com.pranavpandey.android:dynamic-billing:1.0.3'
+    implementation 'com.pranavpandey.android:dynamic-billing:1.0.4'
 }
 ```
 
@@ -144,7 +144,7 @@ Pranav Pandey
 
 ## License
 
-    Copyright 2022 Pranav Pandey
+    Copyright 2022-2023 Pranav Pandey
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
