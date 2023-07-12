@@ -78,6 +78,12 @@ public abstract class DynamicFeaturesView extends DynamicRecyclerViewNested {
      */
     public abstract @NonNull List<DynamicFeature> getFeatures();
 
+    /**
+     * Sets the adapter for his view.
+     *
+     * @return The {@link DynamicFeaturesView} object to allow for chaining of calls to
+     *         set methods.
+     */
     public @NonNull DynamicFeaturesView setAdapter() {
         List<DynamicInfo> features = new ArrayList<>();
         for (DynamicFeature feature : getFeatures()) {
