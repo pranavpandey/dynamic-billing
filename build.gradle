@@ -16,13 +16,13 @@
 
 buildscript {
     ext.versions = [
-            'compileSdk': 34,
-            'minSdk'    : 16,
-            'targetSdk' : 34,
-            'buildTools': '34.0.0',
+            'compileSdk': 35,
+            'minSdk'    : 19,
+            'targetSdk' : 35,
+            'buildTools': '35.0.0',
             'billing'   : '6.0.1',
             'dynamic'   : '4.5.1',
-            'kotlin'    : '1.8.22',
+            'kotlin'    : '1.9.24',
             'support'   : '6.3.0'
     ]
 
