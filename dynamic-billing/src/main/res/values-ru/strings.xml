@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright 2022 Pranav Pandey
+	Copyright 2022-2025 Pranav Pandey
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@
     <string name="adb_purchases">Покупки</string>
     <string name="adb_subscribe">Подписаться</string>
     <string name="adb_active">Активный</string>
+    <string name="adb_manage">Удалось</string>
     <string name="adb_cancel">Отменить</string>
     <string name="adb_change">Изменить</string>
     <string name="adb_migrate">Перенести</string>
@@ -42,6 +43,30 @@
     <string name="adb_restore_done">Покупки успешно восстановлены.</string>
     <string name="adb_update_done">Покупки успешно обновлены.</string>
     <string name="adb_restore_error">Покупки не найдены.</string>
+
+    <!-- Subscription -->
+    <string name="adb_price_day">в день</string>
+    <string name="adb_price_days">за %1$d дней</string>
+    <string name="adb_price_week">в неделю</string>
+    <string name="adb_price_weeks">за %1$d недель</string>
+    <string name="adb_price_month">помесячно</string>
+    <string name="adb_price_months">за %1$d месяцев</string>
+    <string name="adb_price_year">в год</string>
+    <string name="adb_price_years">за %1$d лет</string>
+
+    <!-- Offers -->
+    <string name="adb_offer_free_trial_day">%1$d&#8211;день бесплатной пробной версии</string>
+    <string name="adb_offer_free_trial_week">%1$d&#8211;неделя бесплатной пробной версии</string>
+    <string name="adb_offer_free_trial_month">%1$d&#8211;месяц бесплатная пробная версия</string>
+    <string name="adb_offer_free_trial_year">%1$d&#8211;год бесплатная пробная версия</string>
+    <string name="adb_offer_first_day">в первый день</string>
+    <string name="adb_offer_first_days">за первые %1$d дней</string>
+    <string name="adb_offer_first_week">за первую неделю</string>
+    <string name="adb_offer_first_weeks">за первые %1$d недель</string>
+    <string name="adb_offer_first_month">за первый месяц</string>
+    <string name="adb_offer_first_months">за первые %1$d месяцев</string>
+    <string name="adb_offer_first_year">за первый год</string>
+    <string name="adb_offer_first_years">за первые %1$d лет</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Повторить попытку</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright 2022 Pranav Pandey
+	Copyright 2022-2025 Pranav Pandey
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@
     <string name="adb_purchases">购买</string>
     <string name="adb_subscribe">订阅</string>
     <string name="adb_active">活跃</string>
+    <string name="adb_manage">托管</string>
     <string name="adb_cancel">取消</string>
     <string name="adb_change">更改</string>
     <string name="adb_migrate">迁移</string>
@@ -42,6 +43,30 @@
     <string name="adb_restore_done">购买恢复成功。</string>
     <string name="adb_update_done">购买更新成功。</string>
     <string name="adb_restore_error">未找到购买。</string>
+
+    <!-- Subscription -->
+    <string name="adb_price_day">每天</string>
+    <string name="adb_price_days">每 %1$d 天</string>
+    <string name="adb_price_week">每周</string>
+    <string name="adb_price_weeks">每 %1$d 周</string>
+    <string name="adb_price_month">每月</string>
+    <string name="adb_price_months">每 %1$d 个月</string>
+    <string name="adb_price_year">每年</string>
+    <string name="adb_price_years">每 %1$d 年</string>
+
+    <!-- Offers -->
+    <string name="adb_offer_free_trial_day">%1$d&#8211;天免费试用</string>
+    <string name="adb_offer_free_trial_week">%1$d&#8211;周免费试用</string>
+    <string name="adb_offer_free_trial_month">%1$d&#8211;月免费试用</string>
+    <string name="adb_offer_free_trial_year">%1$d&#8211;年免费试用</string>
+    <string name="adb_offer_first_day">第一天</string>
+    <string name="adb_offer_first_days">前 %1$d 天</string>
+    <string name="adb_offer_first_week">第一周</string>
+    <string name="adb_offer_first_weeks">前 %1$d 周</string>
+    <string name="adb_offer_first_month">第一个月</string>
+    <string name="adb_offer_first_months">前 %1$d 个月</string>
+    <string name="adb_offer_first_year">第一年</string>
+    <string name="adb_offer_first_years">前 %1$d 年</string>
 
     <!-- Error -->
     <string name="adb_error_retry">重试</string>

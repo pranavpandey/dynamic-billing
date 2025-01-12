@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright 2022 Pranav Pandey
+	Copyright 2022-2025 Pranav Pandey
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@
     <string name="adb_purchases">Satın alınanlar</string>
     <string name="adb_subscribe">Abone ol</string>
     <string name="adb_active">Etkin</string>
+    <string name="adb_manage">Yönetilen</string>
     <string name="adb_cancel">İptal</string>
     <string name="adb_change">Değiştir</string>
     <string name="adb_migrate">Taşıma</string>
@@ -42,6 +43,30 @@
     <string name="adb_restore_done">Satın alınanlar başarıyla geri yüklendi.</string>
     <string name="adb_update_done">Satın alınanlar başarıyla güncellendi.</string>
     <string name="adb_restore_error">Satın alma bulunamadı.</string>
+
+    <!-- Subscription -->
+    <string name="adb_price_day">günlük</string>
+    <string name="adb_price_days">%1$d günde bir</string>
+    <string name="adb_price_week">haftada</string>
+    <string name="adb_price_weeks">%1$d haftada bir</string>
+    <string name="adb_price_month">aylık</string>
+    <string name="adb_price_months">%1$d ayda bir</string>
+    <string name="adb_price_year">yıllık</string>
+    <string name="adb_price_years">%1$d yılda bir</string>
+
+    <!-- Offers -->
+    <string name="adb_offer_free_trial_day">%1$d&#8211;günlük ücretsiz deneme</string>
+    <string name="adb_offer_free_trial_week">%1$d&#8211;haftalık ücretsiz deneme</string>
+    <string name="adb_offer_free_trial_month">%1$d&#8211;aylık ücretsiz deneme</string>
+    <string name="adb_offer_free_trial_year">%1$d&#8211;yıl ücretsiz deneme</string>
+    <string name="adb_offer_first_day">ilk gün için</string>
+    <string name="adb_offer_first_days">ilk %1$d gün için</string>
+    <string name="adb_offer_first_week">ilk hafta için</string>
+    <string name="adb_offer_first_weeks">ilk %1$d hafta için</string>
+    <string name="adb_offer_first_month">ilk ay için</string>
+    <string name="adb_offer_first_months">ilk %1$d ay için</string>
+    <string name="adb_offer_first_year">ilk yıl için</string>
+    <string name="adb_offer_first_years">ilk %1$d yıl için</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Yeniden dene</string>

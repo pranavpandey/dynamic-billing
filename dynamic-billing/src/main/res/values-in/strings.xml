@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright 2022 Pranav Pandey
+	Copyright 2022-2025 Pranav Pandey
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@
     <string name="adb_purchases">Pembelian</string>
     <string name="adb_subscribe">Berlangganan</string>
     <string name="adb_active">Aktif</string>
+    <string name="adb_manage">Mengelola</string>
     <string name="adb_cancel">Batal</string>
     <string name="adb_change">Ubah</string>
     <string name="adb_migrate">Migrasi</string>
@@ -42,6 +43,30 @@
     <string name="adb_restore_done">Pembelian berhasil dipulihkan.</string>
     <string name="adb_update_done">Purchases updated successfully.</string>
     <string name="adb_restore_error">Tidak ada pembelian yang ditemukan.</string>
+
+    <!-- Subscription -->
+    <string name="adb_price_day">per hari</string>
+    <string name="adb_price_days">per %1$d hari</string>
+    <string name="adb_price_week">per minggu</string>
+    <string name="adb_price_weeks">per %1$d minggu</string>
+    <string name="adb_price_month">per bulan</string>
+    <string name="adb_price_months">per %1$d bulan</string>
+    <string name="adb_price_year">per tahun</string>
+    <string name="adb_price_years">per %1$d tahun</string>
+
+    <!-- Offers -->
+    <string name="adb_offer_free_trial_day">Uji coba gratis %1$hari</string>
+    <string name="adb_offer_free_trial_week">Uji coba gratis %1$d&#8211;minggu</string>
+    <string name="adb_offer_free_trial_month">Uji coba gratis %1$d&#8211;bulan</string>
+    <string name="adb_offer_free_trial_year">Uji coba gratis %1$d&#8211;tahun</string>
+    <string name="adb_offer_first_day">untuk hari pertama</string>
+    <string name="adb_offer_first_days">untuk %1$d hari pertama</string>
+    <string name="adb_offer_first_week">untuk minggu pertama</string>
+    <string name="adb_offer_first_weeks">untuk %1$d minggu pertama</string>
+    <string name="adb_offer_first_month">untuk bulan pertama</string>
+    <string name="adb_offer_first_months">untuk bulan pertama</string>
+    <string name="adb_offer_first_year">untuk tahun pertama</string>
+    <string name="adb_offer_first_years">untuk %1$d tahun pertama</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Coba lagi</string>

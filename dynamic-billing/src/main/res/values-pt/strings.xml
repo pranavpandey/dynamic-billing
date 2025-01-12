@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright 2022 Pranav Pandey
+	Copyright 2022-2025 Pranav Pandey
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@
     <string name="adb_purchases">Compras</string>
     <string name="adb_subscribe">Inscrever-se</string>
     <string name="adb_active">Ativo</string>
+    <string name="adb_manage">Gerenciou</string>
     <string name="adb_cancel">Cancelar</string>
     <string name="adb_change">Alterar</string>
     <string name="adb_migrate">Migrar</string>
@@ -42,6 +43,30 @@
     <string name="adb_restore_done">Compras restauradas com sucesso.</string>
     <string name="adb_update_done">Compras atualizadas com sucesso.</string>
     <string name="adb_restore_error">Nenhuma compra encontrada.</string>
+
+    <!-- Subscription -->
+    <string name="adb_price_day">por dia</string>
+    <string name="adb_price_days">por %1$d dias</string>
+    <string name="adb_price_week">por semana</string>
+    <string name="adb_price_weeks">por %1$d semanas</string>
+    <string name="adb_price_month">por mês</string>
+    <string name="adb_price_months">por %1$d meses</string>
+    <string name="adb_price_year">por ano</string>
+    <string name="adb_price_years">por %1$d anos</string>
+
+    <!-- Offers -->
+    <string name="adb_offer_free_trial_day">%1$d&#8211;dia de avaliação gratuita</string>
+    <string name="adb_offer_free_trial_week">%1$d&#8211;semana de avaliação gratuita</string>
+    <string name="adb_offer_free_trial_month">%1$d&#8211;mês de avaliação gratuita</string>
+    <string name="adb_offer_free_trial_year">Teste gratuito de %1$d&#8211;ano</string>
+    <string name="adb_offer_first_day">para o primeiro dia</string>
+    <string name="adb_offer_first_days">pelos primeiros %1$d dias</string>
+    <string name="adb_offer_first_week">para a primeira semana</string>
+    <string name="adb_offer_first_weeks">nas primeiras %1$d semanas</string>
+    <string name="adb_offer_first_month">para o primeiro mês</string>
+    <string name="adb_offer_first_months">pelos primeiros %1$d meses</string>
+    <string name="adb_offer_first_year">para o primeiro ano</string>
+    <string name="adb_offer_first_years">pelos primeiros %1$d anos</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Tentar novamente</string>
