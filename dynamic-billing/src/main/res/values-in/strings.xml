@@ -64,7 +64,7 @@
     <string name="adb_offer_first_week">untuk minggu pertama</string>
     <string name="adb_offer_first_weeks">untuk %1$d minggu pertama</string>
     <string name="adb_offer_first_month">untuk bulan pertama</string>
-    <string name="adb_offer_first_months">untuk bulan pertama</string>
+    <string name="adb_offer_first_months">untuk %1$d bulan pertama</string>
     <string name="adb_offer_first_year">untuk tahun pertama</string>
     <string name="adb_offer_first_years">untuk %1$d tahun pertama</string>
 

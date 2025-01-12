@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Pranav Pandey
+ * Copyright 2022-2025 Pranav Pandey
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,8 @@ import androidx.annotation.NonNull;
 
 import com.android.billingclient.api.BillingClient;
 
+import java.util.regex.Pattern;
+
 /**
  * A class to represent the in-app product or subscription.
  */
@@ -37,6 +39,48 @@ public class DynamicProduct implements Parcelable {
      * Product type of this product.
      */
     private final @BillingClient.ProductType String type;
+
+    /**
+     * Interface to hold the period constants.
+     */
+    public @interface Period {
+
+        /**
+         * Constant for the daily period.
+         */
+        String DAY = "D";
+
+        /**
+         * Constant for the weekly period.
+         */
+        String WEEK = "W";
+
+        /**
+         * Constant for the monthly period.
+         */
+        String MONTH = "M";
+
+        /**
+         * Constant for the yearly period.
+         */
+        String YEAR = "Y";
+    }
+
+    /**
+     * Interface to hold the pricing and period patterns.
+     */
+    public @interface Patterns {
+
+        /**
+         * Pattern to match a digit.
+         */
+        Pattern DIGIT = Pattern.compile(".*\\d.*");
+
+        /**
+         * Pattern to match a number.
+         */
+        Pattern NUMBER = Pattern.compile("[^0-9]");
+    }
 
     /**
      * Constructor to initialize an object of this class.

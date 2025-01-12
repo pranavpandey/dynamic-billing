@@ -52,7 +52,7 @@
     <string name="adb_price_month">pro Monat</string>
     <string name="adb_price_months">pro %1$d Monate</string>
     <string name="adb_price_year">pro Jahr</string>
-    <string name="adb_price_years">pro Jahr</string>
+    <string name="adb_price_years">pro %1$d Jahre</string>
 
     <!-- Offers -->
     <string name="adb_offer_free_trial_day">%1$d&#8211;tägige kostenlose Testversion</string>
