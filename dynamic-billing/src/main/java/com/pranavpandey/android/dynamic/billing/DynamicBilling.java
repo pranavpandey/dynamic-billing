@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Pranav Pandey
+ * Copyright 2022-2025 Pranav Pandey
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,6 +60,12 @@ public class DynamicBilling {
      */
     public static final String URL_GOOGLE_PLAY =
             "http://play.google.com/store/account/subscriptions?package=%1$s";
+
+    /**
+     * URL constant to manage subscription inside Google Play.
+     */
+    public static final String URL_GOOGLE_PLAY_SUB =
+            "http://play.google.com/store/account/subscriptions?sku=%1$s&package=%2$s";
 
     /**
      * Singleton instance of {@link DynamicBilling}.
@@ -571,5 +577,21 @@ public class DynamicBilling {
     public void manageGooglePlay() {
         DynamicLinkUtils.viewUrl(getContext(), String.format(
                 URL_GOOGLE_PLAY, getContext().getPackageName()));
+    }
+
+    /**
+     * Try to launch manage subscription flow for Google Play.
+     *
+     * @param productId The product id for the subscription.
+     */
+    public void manageGooglePlaySubscription(@Nullable String productId) {
+        if (productId == null) {
+            manageGooglePlay();
+
+            return;
+        }
+
+        DynamicLinkUtils.viewUrl(getContext(), String.format(
+                URL_GOOGLE_PLAY_SUB, productId, getContext().getPackageName()));
     }
 }

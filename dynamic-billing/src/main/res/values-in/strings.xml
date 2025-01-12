@@ -55,7 +55,7 @@
     <string name="adb_price_years">per %1$d tahun</string>
 
     <!-- Offers -->
-    <string name="adb_offer_free_trial_day">Uji coba gratis %1$hari</string>
+    <string name="adb_offer_free_trial_day">Uji coba gratis %1$d&#8211;hari</string>
     <string name="adb_offer_free_trial_week">Uji coba gratis %1$d&#8211;minggu</string>
     <string name="adb_offer_free_trial_month">Uji coba gratis %1$d&#8211;bulan</string>
     <string name="adb_offer_free_trial_year">Uji coba gratis %1$d&#8211;tahun</string>
