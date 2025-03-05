@@ -1,13 +1,14 @@
-<img src="./graphics/icon.png" width="160" height="160" align="right" hspace="20">
+<img src="./graphics/icon.png" height="160">
 
 # Dynamic Billing
 
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Release](https://img.shields.io/maven-central/v/com.pranavpandey.android/dynamic-billing)](https://search.maven.org/artifact/com.pranavpandey.android/dynamic-billing)
 
-A library to implement Google Play in-app products and subscriptions on Android 
-4.1 (API 16) and above.
+**A library to implement Google Play in-app products and subscriptions on Android 
+4.1 (API 16) and above.**
 
+> [!IMPORTANT]
 > It uses [AndroidX][androidx] so, first [migrate][androidx-migrate] your project to AndroidX.
 <br/>It is dependent on Java 8 due to the dependency on [Dynamic Utils][dynamic-utils].
 <br/>Since v1.1.0, it is targeting Java 17 to provide maximum compatibility.
