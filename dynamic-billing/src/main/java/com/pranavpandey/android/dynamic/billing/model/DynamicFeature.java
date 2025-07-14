@@ -26,8 +26,8 @@ import androidx.annotation.StringRes;
 
 import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingResult;
-import com.android.billingclient.api.ProductDetails;
 import com.android.billingclient.api.Purchase;
+import com.android.billingclient.api.QueryProductDetailsResult;
 import com.pranavpandey.android.dynamic.billing.R;
 import com.pranavpandey.android.dynamic.billing.listener.DynamicBillingListener;
 
@@ -300,7 +300,7 @@ public class DynamicFeature implements Parcelable, DynamicBillingListener {
 
     @Override
     public void onProductDetailsResponse(@NonNull BillingResult billingResult,
-            @NonNull List<ProductDetails> productDetails) { }
+            @NonNull QueryProductDetailsResult queryProductDetailsResult) { }
 
     @Override
     public void onQueryPurchasesResponse(@NonNull BillingResult billingResult,

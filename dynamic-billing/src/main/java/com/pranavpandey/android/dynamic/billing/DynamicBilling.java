@@ -35,12 +35,13 @@ import com.android.billingclient.api.BillingFlowParams;
 import com.android.billingclient.api.BillingResult;
 import com.android.billingclient.api.ConsumeParams;
 import com.android.billingclient.api.ConsumeResponseListener;
-import com.android.billingclient.api.ProductDetails;
+import com.android.billingclient.api.PendingPurchasesParams;
 import com.android.billingclient.api.ProductDetailsResponseListener;
 import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.PurchasesResponseListener;
 import com.android.billingclient.api.PurchasesUpdatedListener;
 import com.android.billingclient.api.QueryProductDetailsParams;
+import com.android.billingclient.api.QueryProductDetailsResult;
 import com.android.billingclient.api.QueryPurchasesParams;
 import com.pranavpandey.android.dynamic.billing.listener.DynamicBillingListener;
 import com.pranavpandey.android.dynamic.billing.model.DynamicFeature;
@@ -189,12 +190,13 @@ public class DynamicBilling {
         this.mProductDetailsResponseListener = new ProductDetailsResponseListener() {
             @Override
             public void onProductDetailsResponse(final @NonNull BillingResult billingResult,
-                    final @NonNull List<ProductDetails> productDetails) {
+                    final @NonNull QueryProductDetailsResult queryProductDetailsResult) {
                 getHandler().post(new Runnable() {
                     @Override
                     public void run() {
                         for (ProductDetailsResponseListener listener : getPurchaseListeners()) {
-                            listener.onProductDetailsResponse(billingResult, productDetails);
+                            listener.onProductDetailsResponse(billingResult,
+                                    queryProductDetailsResult);
                         }
                     }
                 });
@@ -259,7 +261,8 @@ public class DynamicBilling {
 
         this.mBillingClient = BillingClient.newBuilder(getContext())
                 .setListener(mPurchasesUpdatedListener)
-                .enablePendingPurchases()
+                .enablePendingPurchases(PendingPurchasesParams.newBuilder()
+                        .enablePrepaidPlans().enableOneTimeProducts().build())
                 .build();
 
         if (getContext() instanceof DynamicBillingListener) {
