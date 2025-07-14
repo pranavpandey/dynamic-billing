@@ -263,6 +263,7 @@ public class DynamicBilling {
                 .setListener(mPurchasesUpdatedListener)
                 .enablePendingPurchases(PendingPurchasesParams.newBuilder()
                         .enablePrepaidPlans().enableOneTimeProducts().build())
+                .enableAutoServiceReconnection()
                 .build();
 
         if (getContext() instanceof DynamicBillingListener) {
