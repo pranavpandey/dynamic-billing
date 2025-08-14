@@ -356,6 +356,35 @@ public class DynamicBilling {
     }
 
     /**
+     * Add billing listeners to receive the various callbacks.
+     *
+     * @param listeners The billing listeners to be added.
+     *
+     * @return The {@link DynamicBilling} object to allow for chaining of calls to set methods.
+     *
+     * @see DynamicBillingListener
+     * @see #addListener(DynamicBillingListener)
+     */
+    public @NonNull DynamicBilling addListeners(
+            @Nullable List<? extends DynamicBillingListener> listeners) {
+        if (listeners != null) {
+            for (DynamicBillingListener listener : listeners) {
+                if (listener != null && !getPurchaseListeners().contains(listener)) {
+                    getPurchaseListeners().add(listener);
+
+                    if (isConnected()) {
+                        listener.onBillingSetupFinished(mBillingResult);
+                    } else {
+                        startConnection();
+                    }
+                }
+            }
+        }
+
+        return this;
+    }
+
+    /**
      * Remove a billing listener.
      *
      * @param listener The billing listener to be removed.
@@ -366,6 +395,27 @@ public class DynamicBilling {
      */
     public @NonNull DynamicBilling removeListener(@Nullable DynamicBillingListener listener) {
         getPurchaseListeners().remove(listener);
+
+        return this;
+    }
+
+    /**
+     * Remove billing listeners.
+     *
+     * @param listeners The billing listeners to be removed.
+     *
+     * @return The {@link DynamicBilling} object to allow for chaining of calls to set methods.
+     *
+     * @see DynamicBillingListener
+     * @see #removeListener(DynamicBillingListener)
+     */
+    public @NonNull DynamicBilling removeListeners(
+            @Nullable List<? extends DynamicBillingListener> listeners) {
+        if (listeners != null) {
+            for (DynamicBillingListener listener : listeners) {
+                getPurchaseListeners().remove(listener);
+            }
+        }
 
         return this;
     }
