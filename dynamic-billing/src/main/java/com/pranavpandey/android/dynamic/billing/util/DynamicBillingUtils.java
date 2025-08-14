@@ -22,7 +22,7 @@ import androidx.annotation.Nullable;
 
 import com.android.billingclient.api.ProductDetails;
 import com.pranavpandey.android.dynamic.billing.R;
-import com.pranavpandey.android.dynamic.billing.model.DynamicProduct;
+import com.pranavpandey.android.dynamic.billing.model.base.DynamicProduct;
 
 import java.util.List;
 

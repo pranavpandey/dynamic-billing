@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.pranavpandey.android.dynamic.billing.model;
+package com.pranavpandey.android.dynamic.billing.model.base;
 
 import android.os.Parcel;
 import android.os.Parcelable;

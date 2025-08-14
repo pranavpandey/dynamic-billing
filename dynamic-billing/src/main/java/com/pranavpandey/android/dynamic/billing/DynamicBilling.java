@@ -44,7 +44,7 @@ import com.android.billingclient.api.QueryProductDetailsParams;
 import com.android.billingclient.api.QueryProductDetailsResult;
 import com.android.billingclient.api.QueryPurchasesParams;
 import com.pranavpandey.android.dynamic.billing.listener.DynamicBillingListener;
-import com.pranavpandey.android.dynamic.billing.model.DynamicFeature;
+import com.pranavpandey.android.dynamic.billing.model.base.DynamicFeature;
 import com.pranavpandey.android.dynamic.util.DynamicLinkUtils;
 
 import java.util.ArrayList;

@@ -28,7 +28,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.pranavpandey.android.dynamic.billing.R;
 import com.pranavpandey.android.dynamic.billing.adapter.DynamicFeaturesAdapter;
-import com.pranavpandey.android.dynamic.billing.model.DynamicFeature;
+import com.pranavpandey.android.dynamic.billing.model.base.DynamicFeature;
 import com.pranavpandey.android.dynamic.support.model.DynamicInfo;
 import com.pranavpandey.android.dynamic.support.recyclerview.DynamicRecyclerViewFrame;
 import com.pranavpandey.android.dynamic.support.recyclerview.DynamicRecyclerViewNested;
