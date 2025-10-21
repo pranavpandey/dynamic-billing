@@ -20,22 +20,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
 import com.pranavpandey.android.dynamic.billing.R;
-import com.pranavpandey.android.dynamic.billing.model.DynamicInApp;
+import com.pranavpandey.android.dynamic.billing.model.DynamicSubscription;
 
 /**
- * A {@link DynamicInApp} product to represent {@code lifetime} validity.
+ * A {@link DynamicSubscription} product to represent {@code premium} validity.
+ *
+ * @see #ID
  */
-public class Lifetime extends DynamicInApp {
+public class Premium extends DynamicSubscription {
 
     /**
-     * The {@code lifetime} in-app product id.
+     * The {@code premium} subscription product id.
      */
-    public static final String ID = "inapp_app_lifetime";
+    public static final String ID = "subs_app_premium";
 
     /**
      * Constructor to initialize an object of this class.
      */
-    public Lifetime() {
+    public Premium() {
         this(ID);
     }
 
@@ -44,12 +46,12 @@ public class Lifetime extends DynamicInApp {
      *
      * @param id The product id to be used.
      */
-    public Lifetime(@NonNull String id) {
-        super(id, false);
+    public Premium(@NonNull String id) {
+        super(id);
     }
 
     @Override
     public @StringRes int getTitle() {
-        return R.string.adb_inapp_lifetime;
+        return R.string.adb_premium;
     }
 }

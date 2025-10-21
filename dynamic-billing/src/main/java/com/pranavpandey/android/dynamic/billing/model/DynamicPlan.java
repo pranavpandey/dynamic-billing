@@ -14,42 +14,34 @@
  * limitations under the License.
  */
 
-package com.pranavpandey.android.dynamic.billing.model.factory;
+package com.pranavpandey.android.dynamic.billing.model;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
-import androidx.annotation.StringRes;
 
 import com.pranavpandey.android.dynamic.billing.R;
-import com.pranavpandey.android.dynamic.billing.model.DynamicInApp;
 
 /**
- * A {@link DynamicInApp} product to represent {@code lifetime} validity.
+ * A {@link DynamicSubscription} product to represent a base plan.
  */
-public class Lifetime extends DynamicInApp {
-
-    /**
-     * The {@code lifetime} in-app product id.
-     */
-    public static final String ID = "inapp_app_lifetime";
-
-    /**
-     * Constructor to initialize an object of this class.
-     */
-    public Lifetime() {
-        this(ID);
-    }
+public abstract class DynamicPlan extends DynamicSubscription {
 
     /**
      * Constructor to initialize an object of this class.
      *
      * @param id The product id to be used.
      */
-    public Lifetime(@NonNull String id) {
-        super(id, false);
+    public DynamicPlan(@NonNull String id) {
+        super(id);
     }
 
     @Override
-    public @StringRes int getTitle() {
-        return R.string.adb_inapp_lifetime;
+    public boolean isBasePlan() {
+        return true;
+    }
+
+    @Override
+    public @DrawableRes int getIcon() {
+        return R.drawable.adb_ic_product_alt;
     }
 }

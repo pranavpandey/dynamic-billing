@@ -114,7 +114,7 @@ public class DynamicFeature implements Parcelable, DynamicBillingListener {
      */
     public DynamicFeature(@NonNull String id,
             @NonNull List<DynamicProduct> products, boolean enabled) {
-        this(id, R.drawable.adb_ic_product, R.string.adb_product, UNKNOWN_RES, products, enabled);
+        this(id, R.drawable.adb_ic_feature, R.string.adb_product, UNKNOWN_RES, products, enabled);
     }
 
     /**
@@ -273,18 +273,18 @@ public class DynamicFeature implements Parcelable, DynamicBillingListener {
             return;
         }
 
-        setEnabled(false);
-
         for (DynamicProduct product : getProducts()) {
             for (Purchase purchase : purchases) {
                 if (purchase.getProducts().contains(product.getId())) {
                     setEnabled(true);
-
                     break;
                 }
             }
         }
     }
+
+    @Override
+    public void onLaunchBillingActivity() { }
 
     @Override
     public void onBillingServiceDisconnected() { }

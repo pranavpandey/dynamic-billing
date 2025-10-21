@@ -17,12 +17,25 @@
 package com.pranavpandey.android.dynamic.billing.util;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.style.ImageSpan;
 
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.android.billingclient.api.ProductDetails;
 import com.pranavpandey.android.dynamic.billing.R;
+import com.pranavpandey.android.dynamic.billing.model.base.DynamicFeature;
 import com.pranavpandey.android.dynamic.billing.model.base.DynamicProduct;
+import com.pranavpandey.android.dynamic.support.util.DynamicResourceUtils;
+import com.pranavpandey.android.dynamic.util.DynamicDeviceUtils;
+import com.pranavpandey.android.dynamic.util.DynamicDrawableUtils;
+import com.pranavpandey.android.dynamic.util.DynamicLinkUtils;
 
 import java.util.List;
 
@@ -30,6 +43,133 @@ import java.util.List;
  * Helper class to perform billing related operations.
  */
 public class DynamicBillingUtils {
+
+    /**
+     * Intent action constant to launch the billing activity.
+     */
+    public static final String ACTION_ACTIVITY =
+            "com.pranavpandey.android.dynamic.billing.intent.action.ACTIVITY";
+
+    /**
+     * Intent extra constant for the in-app products.
+     */
+    public static final String EXTRA_PRODUCTS_INAPP =
+            "com.pranavpandey.android.dynamic.billing.intent.extra.PRODUCTS_INAPP";
+
+    /**
+     * Intent extra constant for the subscription products.
+     */
+    public static final String EXTRA_PRODUCTS_SUBS =
+            "com.pranavpandey.android.dynamic.billing.intent.extra.PRODUCTS_SUBS";
+
+    /**
+     * Intent extra constant for the external products.
+     */
+    public static final String EXTRA_PRODUCTS_EXTERNAL =
+            "com.pranavpandey.android.dynamic.billing.intent.extra.PRODUCTS_EXTERNAL";
+
+    /**
+     * Intent extra constant for the products to disable subscriptions.
+     *
+     * @see DynamicProduct#isSubscriptions()
+     */
+    public static final String EXTRA_PRODUCTS_DISABLE_SUBS =
+            "com.pranavpandey.android.dynamic.billing.intent.extra.PRODUCTS_DISABLE_SUBS";
+
+    /**
+     * URL constant to manage billing inside Google Play.
+     */
+    public static final String URL_GOOGLE_PLAY =
+            "http://play.google.com/store/account/subscriptions?package=%1$s";
+
+    /**
+     * URL constant to manage subscription inside Google Play.
+     */
+    public static final String URL_GOOGLE_PLAY_SUB =
+            "http://play.google.com/store/account/subscriptions?sku=%1$s&package=%2$s";
+
+    /**
+     * URL constant for Google Payments history.
+     */
+    public static final String URL_GOOGLE_PLAY_ORDER_HISTORY =
+            "https://play.google.com/store/account/orderhistory";
+
+    /**
+     * Build a feature string based on the supplied collection including
+     * icons, titles and subtitles.
+     *
+     * @param context The context to retrieve resources.
+     * @param features The features collection to be processed.
+     * @param color The color to tint the icon drawables.
+     * @param icons {@code true} to include the icons.
+     * @param withSubtitle {@code true} to include the subtitles.
+     *
+     * @return The feature string based on the supplied collection including icons,
+     *         titles and subtitles.
+     */
+    public static @Nullable SpannableStringBuilder buildFeaturesString(
+            @Nullable Context context, @Nullable List<DynamicFeature> features,
+            @ColorInt int color, boolean icons, boolean withSubtitle) {
+        if (context == null || features == null) {
+            return null;
+        }
+
+        SpannableStringBuilder iconString = new SpannableStringBuilder();
+        SpannableStringBuilder textString = new SpannableStringBuilder();
+
+        for (DynamicFeature feature : features) {
+            if (iconString.length() > 0) {
+                iconString.append("    ");
+            }
+            if (textString.length() > 0) {
+                textString.append(withSubtitle ? "\n\n" : "\n");
+            }
+
+            Spannable title = new SpannableString(context.getString(feature.getTitle()));
+            Spannable subtitle = new SpannableString(context.getString(feature.getSubtitle()));
+            Drawable drawable = DynamicResourceUtils.getDrawable(context, feature.getIcon());
+            drawable = DynamicDrawableUtils.colorizeDrawable(drawable, color);
+
+            if (drawable != null) {
+                String span = "[icon]";
+                int size = context.getResources()
+                        .getDimensionPixelOffset(R.dimen.ads_icon_header);
+                drawable.setBounds(0, 0, size, size);
+
+                iconString.append(span);
+                iconString.setSpan(new ImageSpan(drawable, ImageSpan.ALIGN_BASELINE),
+                        iconString.length() - span.length(), iconString.length(),
+                        Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            }
+
+            textString.append(title);
+            if (withSubtitle) {
+                textString.append("\n").append(subtitle);
+            }
+        }
+
+        return icons ? iconString.append("\n\n").append(textString) : textString;
+    }
+
+    /**
+     * Build a feature string based on the supplied collection including
+     * icons, titles and subtitles.
+     *
+     * @param context The context to retrieve resources.
+     * @param features The features collection to be processed.
+     * @param color The color to tint the icon drawables.
+     * @param withSubtitle {@code true} to include the subtitles.
+     *
+     * @return The feature string based on the supplied collection including icons,
+     *         titles and subtitles.
+     *
+     * @see #buildFeaturesString(Context, List, int, boolean, boolean)
+     */
+    public static @Nullable SpannableStringBuilder buildFeaturesString(
+            @Nullable Context context, @Nullable List<DynamicFeature> features,
+            @ColorInt int color, boolean withSubtitle) {
+        return buildFeaturesString(context, features, color, true, withSubtitle);
+    }
 
     /**
      * Returns the user friendly string to display the trial information.
@@ -60,6 +200,43 @@ public class DynamicBillingUtils {
         } else if (period.contains(DynamicProduct.Period.YEAR)) {
             return String.format(context.getString(
                     R.string.adb_offer_free_trial_year), periodCount);
+        }
+
+        return period;
+    }
+
+    /**
+     * Returns the user friendly string to display the validity period.
+     *
+     * @param context The context to retrieve resources.
+     * @param period The ISO 8601 formatted pricing phase period.
+     *
+     * @return The user friendly string to display the validity period.
+     */
+    public static @Nullable String getStringForValidityPeriod(
+            @Nullable Context context, @Nullable String period) {
+        if (context == null || period == null) {
+            return null;
+        }
+
+        int periodCount = Integer.parseInt(period.replaceAll(
+                DynamicProduct.Patterns.NUMBER.pattern(), ""));
+
+        if (period.contains(DynamicProduct.Period.HOUR)) {
+            return context.getResources().getQuantityString(
+                    R.plurals.adb_validity_hours, periodCount, periodCount);
+        } else if (period.contains(DynamicProduct.Period.DAY)) {
+            return context.getResources().getQuantityString(
+                    R.plurals.adb_validity_days, periodCount, periodCount);
+        } else if (period.contains(DynamicProduct.Period.WEEK)) {
+            return context.getResources().getQuantityString(
+                    R.plurals.adb_validity_weeks, periodCount, periodCount);
+        } else if (period.contains(DynamicProduct.Period.MONTH)) {
+            return context.getResources().getQuantityString(
+                    R.plurals.adb_validity_months, periodCount, periodCount);
+        } else if (period.contains(DynamicProduct.Period.YEAR)) {
+            return context.getResources().getQuantityString(
+                    R.plurals.adb_validity_years, periodCount, periodCount);
         }
 
         return period;
@@ -216,6 +393,27 @@ public class DynamicBillingUtils {
     }
 
     /**
+     * Returns a string based on the base offer pricing.
+     *
+     * @param context The context to retrieve resources.
+     * @param offer The offer to retrieve the pricing phases.
+     *
+     * @return A string based on the base offer pricing.
+     *
+     * @see #getPricingPhasesDetails(Context, List, boolean)
+     */
+    public static @Nullable String getOfferDetailsBase(@Nullable Context context,
+            @Nullable ProductDetails.SubscriptionOfferDetails offer) {
+        if (context == null || offer == null) {
+            return null;
+        }
+
+        int size = offer.getPricingPhases().getPricingPhaseList().size();
+        return getPricingPhasesDetails(context, offer.getPricingPhases()
+                .getPricingPhaseList().subList(size - 1, size), true);
+    }
+
+    /**
      * Returns a string based on the offer pricing phase(s).
      *
      * @param context The context to retrieve resources.
@@ -237,23 +435,152 @@ public class DynamicBillingUtils {
     }
 
     /**
-     * Returns a string based on the base offer pricing.
+     * Returns a string based on the offer details.
      *
      * @param context The context to retrieve resources.
-     * @param offer The offer to retrieve the pricing phases.
+     * @param offer The offer to retrieve the offer pricing.
+     * @param withBase {@code true} to include the base price.
+     * @param withValidity {@code true} to include the offer validity.
      *
-     * @return A string based on the base offer pricing.
-     *
-     * @see #getPricingPhasesDetails(Context, List, boolean)
+     * @return A string based on the offer details.
      */
-    public static @Nullable String getOfferDetailsBase(@Nullable Context context,
-            @Nullable ProductDetails.SubscriptionOfferDetails offer) {
+    public static @Nullable String getOfferDetails(@Nullable Context context,
+            @Nullable ProductDetails.OneTimePurchaseOfferDetails offer,
+            boolean withBase, boolean withValidity) {
         if (context == null || offer == null) {
             return null;
         }
 
-        int size = offer.getPricingPhases().getPricingPhaseList().size();
-        return getPricingPhasesDetails(context, offer.getPricingPhases()
-                .getPricingPhaseList().subList(size - 1, size), true);
+        StringBuilder offerDetailsBuilder = new StringBuilder();
+        if (offer.getDiscountDisplayInfo() != null) {
+            String discount;
+            if (offer.getDiscountDisplayInfo().getDiscountAmount() != null) {
+                discount = offer.getDiscountDisplayInfo()
+                        .getDiscountAmount().getFormattedDiscountAmount();
+            } else if (offer.getDiscountDisplayInfo().getPercentageDiscount() != null) {
+                discount = Integer.toString(offer
+                        .getDiscountDisplayInfo().getPercentageDiscount());
+            } else {
+                discount = null;
+            }
+
+            if (discount != null) {
+                offerDetailsBuilder.replace(0, offerDetailsBuilder.length(),
+                        String.format(context.getString(R.string.adb_offer_discount), discount));
+            }
+
+            if (withBase) {
+                offerDetailsBuilder.replace(0, offerDetailsBuilder.length(),
+                        String.format(context.getString(R.string.ads_format_blank_space),
+                        offer.getFormattedPrice(), offerDetailsBuilder));
+            }
+
+            if (withValidity) {
+                offerDetailsBuilder.replace(0, offerDetailsBuilder.length(),
+                        String.format(context.getString(R.string.ads_format_next_line),
+                        offerDetailsBuilder, getOfferDetailsValidity(context, offer)));
+            }
+        } else if (withBase) {
+            offerDetailsBuilder.append(offer.getFormattedPrice());
+        }
+
+        return offerDetailsBuilder.toString();
+    }
+
+    /**
+     * Returns a string based on the offer validity.
+     *
+     * @param context The context to retrieve resources.
+     * @param offer The offer to retrieve the validity.
+     *
+     * @return A string based on the offer validity.
+     */
+    public static @Nullable String getOfferDetailsValidity(@Nullable Context context,
+            @Nullable ProductDetails.OneTimePurchaseOfferDetails offer) {
+        if (context == null || offer == null) {
+            return null;
+        }
+
+        StringBuilder offerDetailsBuilder = new StringBuilder();
+
+        if (offer.getValidTimeWindow() != null
+                && offer.getValidTimeWindow().getEndTimeMillis() != null) {
+            offerDetailsBuilder.append(String.format(
+                    context.getString(R.string.adb_offer_validity),
+                    DynamicDeviceUtils.getDate(context,
+                            offer.getValidTimeWindow().getEndTimeMillis())));
+        }
+
+        return offerDetailsBuilder.toString();
+    }
+
+    /**
+     * Returns a string based on the rental validity.
+     *
+     * @param context The context to retrieve resources.
+     * @param offer The offer to retrieve the rental validity.
+     * @param withExpiration {@code true} to include rental expiration period.
+     *
+     * @return A string based on the rental validity.
+     */
+    public static @Nullable String getRentalDetails(@Nullable Context context,
+            @Nullable ProductDetails.OneTimePurchaseOfferDetails offer, boolean withExpiration) {
+        if (context == null || offer == null) {
+            return null;
+        }
+
+        StringBuilder offerDetailsBuilder = new StringBuilder();
+
+        if (offer.getRentalDetails() != null) {
+            offerDetailsBuilder.append(String.format(context.getString(R.string.adb_offer_rent),
+                    offer.getFormattedPrice(), getStringForValidityPeriod(context,
+                            offer.getRentalDetails().getRentalPeriod())));
+
+            if (withExpiration && offer.getRentalDetails().getRentalExpirationPeriod() != null) {
+                offerDetailsBuilder.replace(0, offerDetailsBuilder.length(),
+                        String.format(context.getString(R.string.adb_offer_rent_expiration),
+                                offerDetailsBuilder, getStringForValidityPeriod(context,
+                                        offer.getRentalDetails().getRentalExpirationPeriod())));
+            }
+        }
+
+        return offerDetailsBuilder.toString();
+    }
+
+    /**
+     * Try to launch manage account flow for Google Play.
+     *
+     * @param context The context to build and launch the intent.
+     */
+    public static void manageGooglePlaySubscriptions(@NonNull Context context) {
+        DynamicLinkUtils.viewUrl(context, String.format(
+                URL_GOOGLE_PLAY, context.getPackageName()));
+    }
+
+    /**
+     * Try to launch manage subscription flow for Google Play.
+     *
+     * @param context The context to build and launch the intent.
+     * @param productId The product id for the subscription.
+     */
+    public static void manageGooglePlaySubscription(
+            @NonNull Context context, @Nullable String productId) {
+        if (productId == null) {
+            manageGooglePlaySubscriptions(context);
+
+            return;
+        }
+
+        DynamicLinkUtils.viewUrl(context, String.format(URL_GOOGLE_PLAY_SUB,
+                productId, context.getPackageName()));
+    }
+
+    /**
+     * Try to launch Google Play order history.
+     *
+     * @param context The context to build and launch the intent.
+     */
+    public static void viewGooglePlayOrderHistory(@NonNull Context context) {
+        DynamicLinkUtils.viewUrl(context, URL_GOOGLE_PLAY_ORDER_HISTORY);
     }
 }

@@ -16,10 +16,11 @@
 
 package com.pranavpandey.android.dynamic.billing.model;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 
-import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.QueryPurchasesParams;
+import com.pranavpandey.android.dynamic.billing.R;
 import com.pranavpandey.android.dynamic.billing.model.base.DynamicProduct;
 
 /**
@@ -28,17 +29,15 @@ import com.pranavpandey.android.dynamic.billing.model.base.DynamicProduct;
 public abstract class DynamicInApp extends DynamicProduct {
 
     /**
-     * The product type for in-app subscription.
+     * The type for the in-app product.
      */
-    public static final @BillingClient.ProductType String TYPE = BillingClient.ProductType.INAPP;
+    public static final @DynamicProduct.Type String TYPE = DynamicProduct.Type.INAPP;
 
     /**
      * The default purchase params to query products based on the type.
      */
     public static final QueryPurchasesParams QUERY_PURCHASES_PARAMS =
-            QueryPurchasesParams.newBuilder()
-                    .setProductType(BillingClient.ProductType.INAPP)
-                    .build();
+            QueryPurchasesParams.newBuilder().setProductType(TYPE).build();
 
     /**
      * Constructor to initialize an object of this class.
@@ -55,7 +54,22 @@ public abstract class DynamicInApp extends DynamicProduct {
      * @param id The product id to be used.
      * @param type The product type to be used.
      */
-    public DynamicInApp(@NonNull String id, @BillingClient.ProductType String type) {
+    public DynamicInApp(@NonNull String id, @DynamicProduct.Type String type) {
         super(id, type);
+    }
+
+    /**
+     * Constructor to initialize an object of this class.
+     *
+     * @param id The unique id for this product.
+     * @param subscriptions {@code false} to disable subscriptions along with this product.
+     */
+    public DynamicInApp(@NonNull String id, boolean subscriptions) {
+        super(id, TYPE, subscriptions);
+    }
+
+    @Override
+    public @DrawableRes int getIcon() {
+        return R.drawable.adb_ic_inapp;
     }
 }

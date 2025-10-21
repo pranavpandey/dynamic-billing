@@ -14,26 +14,44 @@
  * limitations under the License.
  */
 
-package com.pranavpandey.android.dynamic.billing.model.factory;
+package com.pranavpandey.android.dynamic.billing.model.factory.plan;
 
-import com.pranavpandey.android.dynamic.billing.model.DynamicSubscription;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
+
+import com.pranavpandey.android.dynamic.billing.R;
+import com.pranavpandey.android.dynamic.billing.model.DynamicPlan;
 
 /**
- * A {@link DynamicSubscription} product to represent {@code yearly (12 months)} validity.
+ * A {@link DynamicPlan} product to represent {@code yearly (12 months)} validity.
  *
  * @see #ID
  */
-public class Yearly extends DynamicSubscription {
+public class Yearly extends DynamicPlan {
 
     /**
      * The {@code yearly (12 months)} subscription product id.
      */
-    public static final String ID = "subs_app_month_12";
+    public static final String ID = "subs-plan-base-month-12";
 
     /**
      * Constructor to initialize an object of this class.
      */
     public Yearly() {
-        super(ID);
+        this(ID);
+    }
+
+    /**
+     * Constructor to initialize an object of this class.
+     *
+     * @param id The product id to be used.
+     */
+    public Yearly(@NonNull String id) {
+        super(id);
+    }
+
+    @Override
+    public @StringRes int getTitle() {
+        return R.string.adb_subs_annual;
     }
 }

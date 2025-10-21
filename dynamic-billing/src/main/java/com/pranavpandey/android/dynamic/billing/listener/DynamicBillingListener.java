@@ -35,4 +35,10 @@ import com.android.billingclient.api.PurchasesUpdatedListener;
  */
 public interface DynamicBillingListener extends BillingClientStateListener,
         PurchasesUpdatedListener, ProductDetailsResponseListener, PurchasesResponseListener,
-        ConsumeResponseListener, AcknowledgePurchaseResponseListener { }
+        ConsumeResponseListener, AcknowledgePurchaseResponseListener {
+
+    /**
+     * This method will be called after launching the billing activity.
+     */
+    void onLaunchBillingActivity();
+}

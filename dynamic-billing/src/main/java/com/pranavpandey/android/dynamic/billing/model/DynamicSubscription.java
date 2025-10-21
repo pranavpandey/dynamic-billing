@@ -16,10 +16,11 @@
 
 package com.pranavpandey.android.dynamic.billing.model;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 
-import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.QueryPurchasesParams;
+import com.pranavpandey.android.dynamic.billing.R;
 import com.pranavpandey.android.dynamic.billing.model.base.DynamicProduct;
 
 /**
@@ -30,15 +31,13 @@ public abstract class DynamicSubscription extends DynamicProduct {
     /**
      * The product type for in-app subscription.
      */
-    public static final @BillingClient.ProductType String TYPE = BillingClient.ProductType.SUBS;
+    public static final @DynamicProduct.Type String TYPE = DynamicProduct.Type.SUBS;
 
     /**
      * The default purchase params to query products based on the type.
      */
     public static final QueryPurchasesParams QUERY_PURCHASES_PARAMS =
-            QueryPurchasesParams.newBuilder()
-                    .setProductType(BillingClient.ProductType.SUBS)
-                    .build();
+            QueryPurchasesParams.newBuilder().setProductType(TYPE).build();
 
     /**
      * Constructor to initialize an object of this class.
@@ -55,7 +54,12 @@ public abstract class DynamicSubscription extends DynamicProduct {
      * @param id The product id to be used.
      * @param type The product type to be used.
      */
-    public DynamicSubscription(@NonNull String id, @BillingClient.ProductType String type) {
+    public DynamicSubscription(@NonNull String id, @DynamicProduct.Type String type) {
         super(id, type);
+    }
+
+    @Override
+    public @DrawableRes int getIcon() {
+        return R.drawable.adb_ic_subscription_alt;
     }
 }
