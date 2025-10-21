@@ -24,6 +24,22 @@
 
     <path
         android:fillColor="@android:color/white"
-        android:pathData="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z" />
+        android:pathData="m12.2 3h-0.32l-2.63 5.25h5.58z" />
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="m16.5 8.25h5.16l-2.62-5.25h-5.16z" />
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="m21.4 9.75h-8.63v10.4z" />
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="m11.2 20.1v-10.4h-8.63z" />
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M 7.54,8.25 10.16,3 H 5 L 2.38,8.25 Z" />
 
 </vector>
