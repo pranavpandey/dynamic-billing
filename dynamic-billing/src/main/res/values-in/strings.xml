@@ -22,27 +22,55 @@
     <string name="adb_payments">Pembayaran</string>
     <string name="adb_restore">Pulihkan</string>
     <string name="adb_product">Produk</string>
+    <string name="adb_products">Produk</string>
     <string name="adb_feature">Fitur</string>
     <string name="adb_features">Fitur</string>
+    <string name="adb_premium">Premi</string>
+    <string name="adb_one_time">Satu kali</string>
     <string name="adb_subscription">Langganan</string>
+    <string name="adb_subscriptions">Langganan</string>
     <string name="adb_buy">Beli</string>
     <string name="adb_purchase">Beli</string>
     <string name="adb_purchases">Pembelian</string>
     <string name="adb_subscribe">Berlangganan</string>
+    <string name="adb_rent">Menyewa</string>
+    <string name="adb_pre_order">Pesan terlebih dahulu</string>
     <string name="adb_active">Aktif</string>
+    <string name="adb_purchased">Dibeli</string>
+    <string name="adb_installed">Terinstal</string>
     <string name="adb_manage">Mengelola</string>
+    <string name="adb_review">Tinjau</string>
     <string name="adb_cancel">Batal</string>
     <string name="adb_change">Ubah</string>
     <string name="adb_migrate">Migrasi</string>
 
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        Dengan menyelesaikan transaksi apa pun, Anda menyetujui <a href=\'%2$s\'>persyaratan</a> <b>%1$s</b>.
+    ]]></string>
+
     <!-- Info -->
+    <string name="adb_premium_info">Buka lebih banyak fitur dan dukung pengembangan.</string>
+    <string name="adb_premium_supported">Buka lebih banyak fitur dan dukung pengembangan.</string>
+    <string name="adb_premium_review">Pembelian telah diperbarui. Mohon tinjau atau ambil tindakan yang sesuai.</string>
+    <string name="adb_one_time_info">Bayar sekali dan hemat untuk penggunaan jangka panjang.</string>
+    <string name="adb_one_time_subscription_info">Batalkan langganan yang aktif terlebih dahulu untuk menghindari pembayaran biaya tambahan.</string>
     <string name="adb_disclaimer_payment">Pembayaran akan dibebankan ke akun Google Play Anda di akhir uji coba gratis atau konfirmasi pembelian jika Anda tidak memulai uji coba.</string>
     <string name="adb_disclaimer_subscription">Langganan akan diperpanjang secara otomatis kecuali dibatalkan setidaknya 24 jam sebelum akhir uji coba gratis atau periode berjalan Anda.</string>
     <string name="adb_disclaimer_renewal">Akun Anda akan dikenakan biaya untuk pembaruan dalam waktu 24 jam sebelum akhir periode berjalan.</string>
     <string name="adb_disclaimer_cancel">Anda dapat mengelola atau membatalkan langganan kapan saja di setelan Google Play.</string>
+    <string name="adb_product_external_google_play">Produk eksternal yang didistribusikan melalui Google Play.</string>
     <string name="adb_restore_done">Pembelian berhasil dipulihkan.</string>
     <string name="adb_update_done">Purchases updated successfully.</string>
     <string name="adb_restore_error">Tidak ada pembelian yang ditemukan.</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">Seumur Hidup</string>
+    <string name="adb_subs_weekly">Mingguan</string>
+    <string name="adb_subs_monthly">Bulanan</string>
+    <string name="adb_subs_half_yearly">Setengah Tahunan</string>
+    <string name="adb_subs_yearly">Tahunan</string>
+    <string name="adb_subs_annual">Tahunan</string>
 
     <!-- Subscription -->
     <string name="adb_price_day">per hari</string>
@@ -54,7 +82,11 @@
     <string name="adb_price_year">per tahun</string>
     <string name="adb_price_years">per %1$d tahun</string>
 
-    <!-- Offers -->
+    <!-- Offer -->
+    <string name="adb_offer_rent">Sewa %1$s selama %2$s</string>
+    <string name="adb_offer_rent_expiration">%1$s, selesai dalam %2$s.</string>
+    <string name="adb_offer_discount">Diskon %1$s%%</string>
+    <string name="adb_offer_validity">Berlaku hingga %1$s</string>
     <string name="adb_offer_free_trial_day">Uji coba gratis %1$d&#8211;hari</string>
     <string name="adb_offer_free_trial_week">Uji coba gratis %1$d&#8211;minggu</string>
     <string name="adb_offer_free_trial_month">Uji coba gratis %1$d&#8211;bulan</string>
@@ -67,6 +99,18 @@
     <string name="adb_offer_first_months">untuk %1$d bulan pertama</string>
     <string name="adb_offer_first_year">untuk tahun pertama</string>
     <string name="adb_offer_first_years">untuk %1$d tahun pertama</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d jam</string>
+    <string name="adb_validity_hours">%1$d jam</string>
+    <string name="adb_validity_day">%1$d hari</string>
+    <string name="adb_validity_days">%1$d hari</string>
+    <string name="adb_validity_week">%1$d minggu</string>
+    <string name="adb_validity_weeks">%1$d minggu</string>
+    <string name="adb_validity_month">%1$d bulan</string>
+    <string name="adb_validity_months">%1$d bulan</string>
+    <string name="adb_validity_year">%1$d tahun</string>
+    <string name="adb_validity_years">%1$d tahun</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Coba lagi</string>

@@ -22,27 +22,55 @@
     <string name="adb_payments">付款</string>
     <string name="adb_restore">恢复</string>
     <string name="adb_product">产品</string>
+    <string name="adb_products">产品</string>
     <string name="adb_feature">功能</string>
     <string name="adb_features">功能</string>
+    <string name="adb_premium">优质的</string>
+    <string name="adb_one_time">Satu kali</string>
     <string name="adb_subscription">订阅</string>
+    <string name="adb_subscriptions">订阅</string>
     <string name="adb_buy">购买</string>
     <string name="adb_purchase">购买</string>
     <string name="adb_purchases">购买</string>
     <string name="adb_subscribe">订阅</string>
+    <string name="adb_rent">租</string>
+    <string name="adb_pre_order">预购</string>
     <string name="adb_active">活跃</string>
+    <string name="adb_purchased">已购买</string>
+    <string name="adb_installed">已安装</string>
     <string name="adb_manage">托管</string>
+    <string name="adb_review">评价</string>
     <string name="adb_cancel">取消</string>
     <string name="adb_change">更改</string>
     <string name="adb_migrate">迁移</string>
 
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        完成任何交易即表示您同意 <b>%1$s 的</b> <a href=\'%2$s\'>条款</a>。
+    ]]></string>
+
     <!-- Info -->
+    <string name="adb_premium_info">解锁更多功能并支持开发。</string>
+    <string name="adb_premium_supported">解锁更多功能并支持开发。</string>
+    <string name="adb_premium_review">购买已更新。请相应地进行评价或采取行动。</string>
+    <string name="adb_one_time_info">一次付费，长期使用即可节省成本。</string>
+    <string name="adb_one_time_subscription_info">请先取消所有有效订阅以避免支付额外费用。</string>
     <string name="adb_disclaimer_payment">如果您没有开始试用，则在免费试用结束或确认购买时，将向您的 Google Play 帐户收取费用。</string>
     <string name="adb_disclaimer_subscription">订阅将自动续订，除非在免费试用期或当前期限结束前至少 24 小时取消。</string>
     <string name="adb_disclaimer_renewal">您的帐户将在当前期限结束前 24 小时内收取续订费用。</string>
     <string name="adb_disclaimer_cancel">您可以随时在 Google Play 设置中管理或取消订阅。</string>
+    <string name="adb_product_external_google_play">通过 Google Play 分发的外部产品。</string>
     <string name="adb_restore_done">购买恢复成功。</string>
     <string name="adb_update_done">购买更新成功。</string>
     <string name="adb_restore_error">未找到购买。</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">终身</string>
+    <string name="adb_subs_weekly">每周</string>
+    <string name="adb_subs_monthly">每月</string>
+    <string name="adb_subs_half_yearly">半年</string>
+    <string name="adb_subs_yearly">每年</string>
+    <string name="adb_subs_annual">每年</string>
 
     <!-- Subscription -->
     <string name="adb_price_day">每天</string>
@@ -54,7 +82,11 @@
     <string name="adb_price_year">每年</string>
     <string name="adb_price_years">每 %1$d 年</string>
 
-    <!-- Offers -->
+    <!-- Offer -->
+    <string name="adb_offer_rent">租赁 %1$s，为期 %2$s</string>
+    <string name="adb_offer_rent_expiration">%1$s，请在 %2$s 内完成。</string>
+    <string name="adb_offer_discount">立减 %1$s%%</string>
+    <string name="adb_offer_validity">有效期至 %1$s</string>
     <string name="adb_offer_free_trial_day">%1$d&#8211;天免费试用</string>
     <string name="adb_offer_free_trial_week">%1$d&#8211;周免费试用</string>
     <string name="adb_offer_free_trial_month">%1$d&#8211;月免费试用</string>
@@ -67,6 +99,19 @@
     <string name="adb_offer_first_months">前 %1$d 个月</string>
     <string name="adb_offer_first_year">第一年</string>
     <string name="adb_offer_first_years">前 %1$d 年</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d 小时</string>
+    <string name="adb_validity_hours">%1$d 小时</string>
+    <string name="adb_validity_day">%1$d 天</string>
+    <string name="adb_validity_days">%1$d 天</string>
+    <string name="adb_validity_week">%1$d 周</string>
+    <string name="adb_validity_weeks">%1$d 周</string>
+    <string name="adb_validity_month">%1$d 月</string>
+    <string name="adb_validity_months">%1$d 月</string>
+    <string name="adb_validity_year">%1$d 年</string>
+    <string name="adb_validity_years">%1$d 年</string>
+
 
     <!-- Error -->
     <string name="adb_error_retry">重试</string>

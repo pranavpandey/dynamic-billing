@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022-2025 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">청구/결제</string>
+    <string name="adb_payments">결제</string>
+    <string name="adb_restore">복원</string>
+    <string name="adb_product">제품</string>
+    <string name="adb_products">제품</string>
+    <string name="adb_feature">기능</string>
+    <string name="adb_features">기능</string>
+    <string name="adb_premium">프리미엄</string>
+    <string name="adb_one_time">일회성</string>
+    <string name="adb_subscription">구독</string>
+    <string name="adb_subscriptions">구독</string>
+    <string name="adb_buy">구매</string>
+    <string name="adb_purchase">구매</string>
+    <string name="adb_purchases">구매 내역</string>
+    <string name="adb_subscribe">구독</string>
+    <string name="adb_rent">대여</string>
+    <string name="adb_pre_order">예약 주문</string>
+    <string name="adb_active">활성</string>
+    <string name="adb_purchased">구매됨</string>
+    <string name="adb_installed">설치됨</string>
+    <string name="adb_manage">관리</string>
+    <string name="adb_review">검토</string>
+    <string name="adb_cancel">취소</string>
+    <string name="adb_change">변경</string>
+    <string name="adb_migrate">이전</string>
+
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        모든 거래를 완료하면 <b>%1$s</b>의 <a href=\'%2$s\'>약관</a>에 동의하게 됩니다.
+    ]]></string>
+
+    <!-- Info -->
+    <string name="adb_premium_info">더 많은 기능을 잠금 해제하고 개발을 지원하세요.</string>
+    <string name="adb_premium_supported">개발을 지원해 주셔서 감사합니다.</string>
+    <string name="adb_premium_review">구매 내역이 업데이트되었습니다. 그에 따라 검토하거나 조치를 취해 주십시오.</string>
+    <string name="adb_one_time_info">한 번만 결제하고 장기적인 사용 비용을 절약하세요.</string>
+    <string name="adb_one_time_subscription_info">추가 요금이 부과되는 것을 방지하려면 먼저 활성 구독을 모두 취소하세요.</string>
+    <string name="adb_disclaimer_payment">결제는 무료 체험 기간이 끝나거나, 체험을 시작하지 않는 경우 구매 확인 시점에 Google Play 계정에 청구됩니다.</string>
+    <string name="adb_disclaimer_subscription">구독은 무료 체험 또는 현재 기간이 끝나기 최소 24시간 전에 취소하지 않으면 자동으로 갱신됩니다.</string>
+    <string name="adb_disclaimer_renewal">현재 기간이 끝나기 24시간 이내에 갱신 요금이 계정에 청구됩니다.</string>
+    <string name="adb_disclaimer_cancel">Google Play 설정에서 언제든지 구독을 관리하거나 취소할 수 있습니다.</string>
+    <string name="adb_product_external_google_play">Google Play를 통해 배포되는 외부 제품입니다.</string>
+    <string name="adb_restore_done">구매 내역이 성공적으로 복원되었습니다.</string>
+    <string name="adb_update_done">구매 내역이 성공적으로 업데이트되었습니다.</string>
+    <string name="adb_restore_error">구매 내역을 찾을 수 없습니다.</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">평생</string>
+    <string name="adb_subs_weekly">주간</string>
+    <string name="adb_subs_monthly">월간</string>
+    <string name="adb_subs_half_yearly">반기</string>
+    <string name="adb_subs_yearly">연간</string>
+    <string name="adb_subs_annual">연간</string>
+
+    <!-- Subscription -->
+    <string name="adb_price_day">1일당</string>
+    <string name="adb_price_days">%1$d일당</string>
+    <string name="adb_price_week">1주당</string>
+    <string name="adb_price_weeks">%1$d주당</string>
+    <string name="adb_price_month">1개월당</string>
+    <string name="adb_price_months">%1$d개월당</string>
+    <string name="adb_price_year">1년당</string>
+    <string name="adb_price_years">%1$d년당</string>
+
+    <!-- Offer -->
+    <string name="adb_offer_rent">%2$s 동안의 %1$s 대여</string>
+    <string name="adb_offer_rent_expiration">%1$s, %2$s 내에 완료.</string>
+    <string name="adb_offer_discount">%1$s%% 할인</string>
+    <string name="adb_offer_validity">%1$s까지 유효</string>
+    <string name="adb_offer_free_trial_day">%1$d일 무료 체험</string>
+    <string name="adb_offer_free_trial_week">%1$d주 무료 체험</string>
+    <string name="adb_offer_free_trial_month">%1$d개월 무료 체험</string>
+    <string name="adb_offer_free_trial_year">%1$d년 무료 체험</string>
+    <string name="adb_offer_first_day">첫째 날에</string>
+    <string name="adb_offer_first_days">첫 %1$d일 동안</string>
+    <string name="adb_offer_first_week">첫 주에</string>
+    <string name="adb_offer_first_weeks">첫 %1$d주 동안</string>
+    <string name="adb_offer_first_month">첫 1개월에</string>
+    <string name="adb_offer_first_months">첫 %1$d개월 동안</string>
+    <string name="adb_offer_first_year">첫 1년에</string>
+    <string name="adb_offer_first_years">첫 %1$d년 동안</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d시간</string>
+    <string name="adb_validity_hours">%1$d시간</string>
+    <string name="adb_validity_day">%1$d일</string>
+    <string name="adb_validity_days">%1$d일</string>
+    <string name="adb_validity_week">%1$d주</string>
+    <string name="adb_validity_weeks">%1$d주</string>
+    <string name="adb_validity_month">%1$d개월</string>
+    <string name="adb_validity_months">%1$d개월</string>
+    <string name="adb_validity_year">%1$d년</string>
+    <string name="adb_validity_years">%1$d년</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">다시 시도</string>
+    <string name="adb_error_connection">결제 서비스에 연결할 수 없습니다.</string>
+
+</resources>

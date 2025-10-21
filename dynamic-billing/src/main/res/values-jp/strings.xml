@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright 2022-2025 Pranav Pandey
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+-->
+
+<resources>
+
+    <!-- Billing -->
+    <string name="adb_billing">課金</string>
+    <string name="adb_payments">支払い</string>
+    <string name="adb_restore">復元</string>
+    <string name="adb_product">製品</string>
+    <string name="adb_products">製品</string>
+    <string name="adb_feature">機能</string>
+    <string name="adb_features">機能</string>
+    <string name="adb_premium">プレミアム</string>
+    <string name="adb_one_time">一回限り</string>
+    <string name="adb_subscription">定期購入</string>
+    <string name="adb_subscriptions">定期購入</string>
+    <string name="adb_buy">購入</string>
+    <string name="adb_purchase">購入</string>
+    <string name="adb_purchases">購入履歴</string>
+    <string name="adb_subscribe">定期購入</string>
+    <string name="adb_rent">レンタル</string>
+    <string name="adb_pre_order">予約注文</string>
+    <string name="adb_active">有効</string>
+    <string name="adb_purchased">購入済み</string>
+    <string name="adb_installed">インストール済み</string>
+    <string name="adb_manage">管理</string>
+    <string name="adb_review">確認</string>
+    <string name="adb_cancel">キャンセル</string>
+    <string name="adb_change">変更</string>
+    <string name="adb_migrate">移行</string>
+
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        いずれかの取引を完了することにより、お客様は <b>%1$s の</b> <a href=\'%2$s\'>規約</a> に同意したことになります。
+    ]]></string>
+
+    <!-- Info -->
+    <string name="adb_premium_info">より多くの機能のロックを解除し、開発をサポートしてください。</string>
+    <string name="adb_premium_supported">開発のご支援ありがとうございます。</string>
+    <string name="adb_premium_review">購入が更新されました。内容を確認し、必要に応じて操作を行ってください。</string>
+    <string name="adb_one_time_info">一度支払うだけで、長期的に使用でき、お得です。</string>
+    <string name="adb_one_time_subscription_info">余分な料金を支払うことを避けるために、まず有効な定期購入をキャンセルしてください。</string>
+    <string name="adb_disclaimer_payment">お支払いは、無料トライアル期間の終了時、またはトライアルを開始しない場合は購入確認時にGoogle Playアカウントに請求されます。</string>
+    <string name="adb_disclaimer_subscription">定期購入は、無料トライアルまたは現在の期間が終了する少なくとも24時間前までにキャンセルされない限り、自動的に更新されます。</string>
+    <string name="adb_disclaimer_renewal">現在の期間が終了する前の24時間以内に、アカウントに更新料金が請求されます。</string>
+    <string name="adb_disclaimer_cancel">定期購入は、Google Playの設定でいつでも管理またはキャンセルできます。</string>
+    <string name="adb_product_external_google_play">Google Play経由で配信される外部製品。</string>
+    <string name="adb_restore_done">購入履歴が正常に復元されました。</string>
+    <string name="adb_update_done">購入履歴が正常に更新されました。</string>
+    <string name="adb_restore_error">購入履歴が見つかりませんでした。</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">永続的</string>
+    <string name="adb_subs_weekly">週次</string>
+    <string name="adb_subs_monthly">月次</string>
+    <string name="adb_subs_half_yearly">半年ごと</string>
+    <string name="adb_subs_yearly">年次</string>
+    <string name="adb_subs_annual">年間</string>
+
+    <!-- Subscriptions -->
+    <string name="adb_price_day">1日あたり</string>
+    <string name="adb_price_days">%1$d 日あたり</string>
+    <string name="adb_price_week">1週間あたり</string>
+    <string name="adb_price_weeks">%1$d 週間あたり</string>
+    <string name="adb_price_month">1か月あたり</string>
+    <string name="adb_price_months">%1$d か月あたり</string>
+    <string name="adb_price_year">1年あたり</string>
+    <string name="adb_price_years">%1$d 年あたり</string>
+
+    <!-- Offer -->
+    <string name="adb_offer_rent">%2$s の間、%1$s をレンタル</string>
+    <string name="adb_offer_rent_expiration">%1$s、%2$s 以内に終了してください。</string>
+    <string name="adb_offer_discount">%1$s%% オフ</string>
+    <string name="adb_offer_validity">%1$s まで有効</string>
+    <string name="adb_offer_free_trial_day">%1$d&#8211;日間無料トライアル</string>
+    <string name="adb_offer_free_trial_week">%1$d&#8211;週間無料トライアル</string>
+    <string name="adb_offer_free_trial_month">%1$d&#8211;か月間無料トライアル</string>
+    <string name="adb_offer_free_trial_year">%1$d&#8211;年間無料トライアル</string>
+    <string name="adb_offer_first_day">最初の1日間</string>
+    <string name="adb_offer_first_days">最初の %1$d 日間</string>
+    <string name="adb_offer_first_week">最初の1週間</string>
+    <string name="adb_offer_first_weeks">最初の %1$d 週間</string>
+    <string name="adb_offer_first_month">最初の1か月間</string>
+    <string name="adb_offer_first_months">最初の %1$d か月間</string>
+    <string name="adb_offer_first_year">最初の1年間</string>
+    <string name="adb_offer_first_years">最初の %1$d 年間</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d 時間</string>
+    <string name="adb_validity_hours">%1$d 時間</string>
+    <string name="adb_validity_day">%1$d 日</string>
+    <string name="adb_validity_days">%1$d 日間</string>
+    <string name="adb_validity_week">%1$d 週間</string>
+    <string name="adb_validity_weeks">%1$d 週間</string>
+    <string name="adb_validity_month">%1$d か月</string>
+    <string name="adb_validity_months">%1$d か月間</string>
+    <string name="adb_validity_year">%1$d 年</string>
+    <string name="adb_validity_years">%1$d 年間</string>
+
+    <!-- Error -->
+    <string name="adb_error_retry">再試行</string>
+    <string name="adb_error_connection">課金サービスに接続できません。</string>
+
+</resources>

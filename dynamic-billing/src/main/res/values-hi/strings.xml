@@ -22,27 +22,55 @@
     <string name="adb_payments">भुगतान</string>
     <string name="adb_restore">पुनर्स्थापित करें</string>
     <string name="adb_product">उत्पाद</string>
+    <string name="adb_products">उत्पाद</string>
     <string name="adb_feature">सुविधा</string>
     <string name="adb_features">विशेषताएं</string>
+    <string name="adb_premium">अधिमूल्य</string>
+    <string name="adb_one_time">एक बार</string>
     <string name="adb_subscription">सदस्यता</string>
+    <string name="adb_subscriptions">सदस्यता</string>
     <string name="adb_buy">खरीदें</string>
     <string name="adb_purchase">खरीदें</string>
     <string name="adb_purchases">खरीदारी</string>
     <string name="adb_subscribe">सदस्यता लें</string>
+    <string name="adb_rent">किराया</string>
+    <string name="adb_pre_order">पूर्व आदेश</string>
     <string name="adb_active">सक्रिय</string>
+    <string name="adb_purchased">खरीदा गया</string>
+    <string name="adb_installed">इंस्टॉल किया गया</string>
     <string name="adb_manage">प्रबंधित करें</string>
+    <string name="adb_review">समीक्षा करें</string>
     <string name="adb_cancel">रद्द करें</string>
     <string name="adb_change">बदलें</string>
     <string name="adb_migrate">माइग्रेट करें</string>
 
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        कोई भी लेन-देन पूरा करके, आप <b>%1$s के</b> <a href=\'%2$s\'>नियमों</a> से सहमत हैं।
+    ]]></string>
+
     <!-- Info -->
+    <string name="adb_premium_info">अधिक सुविधाएँ अनलॉक करें और विकास का समर्थन करें।</string>
+    <string name="adb_premium_supported">अधिक सुविधाएँ अनलॉक करें और विकास का समर्थन करें।</string>
+    <string name="adb_premium_review">खरीदें अपडेट हो गई हैं। कृपया समीक्षा करें या तदनुसार कार्रवाई करें।</string>
+    <string name="adb_one_time_info">एक बार भुगतान करें और दीर्घकालिक उपयोग पर बचत करें।</string>
+    <string name="adb_one_time_subscription_info">अतिरिक्त शुल्क से बचने के लिए पहले किसी भी सक्रिय सदस्यता को रद्द करें।</string>
     <string name="adb_disclaimer_payment">यदि आप परीक्षण शुरू नहीं कर रहे हैं तो नि: शुल्क परीक्षण या खरीद की पुष्टि के अंत में आपके Google Play खाते से भुगतान लिया जाएगा।</string>
     <string name="adb_disclaimer_subscription">सदस्यता स्वचालित रूप से नवीनीकृत हो जाएगी जब तक कि इसे आपके नि: शुल्क परीक्षण या वर्तमान अवधि के अंत से कम से कम 24 घंटे पहले रद्द नहीं किया जाता है।</string>
     <string name="adb_disclaimer_renewal">आपके खाते से वर्तमान अवधि की समाप्ति से 24 घंटे पहले नवीनीकरण के लिए शुल्क लिया जाएगा।</string>
     <string name="adb_disclaimer_cancel">आप Google Play सेटिंग में किसी भी समय सदस्यता को प्रबंधित या रद्द कर सकते हैं।</string>
+    <string name="adb_product_external_google_play">गूगल प्ले के माध्यम से वितरित एक बाहरी उत्पाद.</string>
     <string name="adb_restore_done">खरीदारी सफलतापूर्वक बहाल हो गई।</string>
     <string name="adb_update_done">खरीदारी सफलतापूर्वक अपडेट की गई।</string>
     <string name="adb_restore_error">कोई खरीदारी नहीं मिली।</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">आजीवन</string>
+    <string name="adb_subs_weekly">साप्ताहिक</string>
+    <string name="adb_subs_monthly">मासिक</string>
+    <string name="adb_subs_half_yearly">अर्ध-वार्षिक</string>
+    <string name="adb_subs_yearly">वार्षिक</string>
+    <string name="adb_subs_annual">सालाना</string>
 
     <!-- Subscription -->
     <string name="adb_price_day">प्रति दिन</string>
@@ -54,7 +82,11 @@
     <string name="adb_price_year">प्रति वर्ष</string>
     <string name="adb_price_years">प्रति %1$d वर्ष</string>
 
-    <!-- Offers -->
+    <!-- Offer -->
+    <string name="adb_offer_rent">%1$s का किराया %2$s के लिए</string>
+    <string name="adb_offer_rent_expiration">%1$s, %2$s के भीतर समाप्त करें।</string>
+    <string name="adb_offer_discount">%1$s%% छूट</string>
+    <string name="adb_offer_validity">%1$s तक मान्य</string>
     <string name="adb_offer_free_trial_day">%1$d&#8211;दिन का निःशुल्क परीक्षण</string>
     <string name="adb_offer_free_trial_week">%1$d&#8211;सप्ताह का निःशुल्क परीक्षण</string>
     <string name="adb_offer_free_trial_month">%1$d&#8211;माह निःशुल्क परीक्षण</string>
@@ -67,6 +99,18 @@
     <string name="adb_offer_first_months">पहले %1$d महीनों के लिए</string>
     <string name="adb_offer_first_year">प्रथम वर्ष के लिए</string>
     <string name="adb_offer_first_years">पहले %1$d वर्षों के लिए</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d घंटा</string>
+    <string name="adb_validity_hours">%1$d घंटे</string>
+    <string name="adb_validity_day">%1$d दिन</string>
+    <string name="adb_validity_days">%1$d दिन</string>
+    <string name="adb_validity_week">%1$d सप्ताह</string>
+    <string name="adb_validity_weeks">%1$d सप्ताह</string>
+    <string name="adb_validity_month">%1$d महीना</string>
+    <string name="adb_validity_months">%1$d महीने</string>
+    <string name="adb_validity_year">%1$d साल</string>
+    <string name="adb_validity_years">%1$d साल</string>
 
     <!-- Error -->
     <string name="adb_error_retry">पुन: प्रयास करें</string>

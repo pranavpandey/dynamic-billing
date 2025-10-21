@@ -22,27 +22,55 @@
     <string name="adb_payments">Paiements</string>
     <string name="adb_restore">Restaurer</string>
     <string name="adb_product">Produit</string>
+    <string name="adb_products">Produits</string>
     <string name="adb_feature">Fonctionnalité</string>
     <string name="adb_features">Fonctionnalités</string>
+    <string name="adb_premium">Prime</string>
+    <string name="adb_one_time">Une fois</string>
     <string name="adb_subscription">Abonnement</string>
+    <string name="adb_subscriptions">Abonnements</string>
     <string name="adb_buy">Acheter</string>
     <string name="adb_purchase">Achat</string>
     <string name="adb_purchases">Achats</string>
     <string name="adb_subscribe">S\'abonner</string>
+    <string name="adb_rent">Louer</string>
+    <string name="adb_pre_order">Précommande</string>
     <string name="adb_active">Actif</string>
+    <string name="adb_purchased">Acheté</string>
+    <string name="adb_installed">Installé</string>
     <string name="adb_manage">Gérer</string>
+    <string name="adb_review">Vérifier</string>
     <string name="adb_cancel">Annuler</string>
     <string name="adb_change">Modifier</string>
     <string name="adb_migrate">Migrer</string>
 
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        En effectuant l\'une des transactions, vous acceptez les <a href=\'%2$s\'>conditions</a> de <b>%1$s</b>.
+    ]]></string>
+
     <!-- Info -->
+    <string name="adb_premium_info">Débloquez plus de fonctionnalités et soutenez le développement.</string>
+    <string name="adb_premium_supported">Débloquez plus de fonctionnalités et soutenez le développement.</string>
+    <string name="adb_premium_review">Les achats ont été mis à jour. Veuillez les vérifier ou agir en conséquence.</string>
+    <string name="adb_one_time_info">Payez une fois et économisez sur une utilisation à long terme.</string>
+    <string name="adb_one_time_subscription_info">Annulez d\’abord tous les abonnements actifs pour éviter de payer des frais supplémentaires.</string>
     <string name="adb_disclaimer_payment">Le paiement sera débité de votre compte Google Play à la fin de l\'essai gratuit ou de la confirmation d\'achat si vous ne démarrez pas d\'essai.</string>
     <string name="adb_disclaimer_subscription">L\'abonnement sera automatiquement renouvelé à moins qu\'il ne soit annulé au moins 24 heures avant la fin de votre essai gratuit ou de la période en cours.</string>
     <string name="adb_disclaimer_renewal">Votre compte sera facturé pour le renouvellement dans les 24 heures précédant la fin de la période en cours.</string>
     <string name="adb_disclaimer_cancel">Vous pouvez gérer ou annuler les abonnements à tout moment dans les paramètres de Google Play.</string>
+    <string name="adb_product_external_google_play">Un produit externe distribué via Google Play.</string>
     <string name="adb_restore_done">Les achats ont été restaurés avec succès.</string>
     <string name="adb_update_done">Les achats ont été mis à jour avec succès.</string>
     <string name="adb_restore_error">Aucun achat trouvé.</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">À vie</string>
+    <string name="adb_subs_weekly">Hebdomadaire</string>
+    <string name="adb_subs_monthly">Mensuel</string>
+    <string name="adb_subs_half_yearly">Semestriel</string>
+    <string name="adb_subs_yearly">Annuel</string>
+    <string name="adb_subs_annual">Annuel</string>
 
     <!-- Subscription -->
     <string name="adb_price_day">par jour</string>
@@ -54,7 +82,11 @@
     <string name="adb_price_year">par année</string>
     <string name="adb_price_years">par %1$d années</string>
 
-    <!-- Offers -->
+    <!-- Offer -->
+    <string name="adb_offer_rent">Location de %1$s pour %2$s</string>
+    <string name="adb_offer_rent_expiration">Expire le %1$s, à terminer d\'ici le %2$s.</string>
+    <string name="adb_offer_discount">%1$s%% de réduction</string>
+    <string name="adb_offer_validity">Valable jusqu\'au %1$s</string>
     <string name="adb_offer_free_trial_day">Essai gratuit de %1$d\'jour</string>
     <string name="adb_offer_free_trial_week">Essai gratuit de %1$d&#8211;semaine</string>
     <string name="adb_offer_free_trial_month">Essai gratuit de %1$d\'mois</string>
@@ -67,6 +99,18 @@
     <string name="adb_offer_first_months">pour les %1$d premiers mois</string>
     <string name="adb_offer_first_year">pour la première année</string>
     <string name="adb_offer_first_years">pour les %1$d premières années</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d heure</string>
+    <string name="adb_validity_hours">%1$d heures</string>
+    <string name="adb_validity_day">%1$d jour</string>
+    <string name="adb_validity_days">%1$d jours</string>
+    <string name="adb_validity_week">%1$d semaine</string>
+    <string name="adb_validity_weeks">%1$d semaines</string>
+    <string name="adb_validity_month">%1$d mois</string>
+    <string name="adb_validity_months">%1$d mois</string>
+    <string name="adb_validity_year">%1$d an</string>
+    <string name="adb_validity_years">%1$d ans</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Réessayer</string>

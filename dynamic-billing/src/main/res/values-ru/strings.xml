@@ -22,27 +22,55 @@
     <string name="adb_payments">Платежи</string>
     <string name="adb_restore">Восстановить</string>
     <string name="adb_product">Продукт</string>
+    <string name="adb_products">Товары</string>
     <string name="adb_feature">Функция</string>
     <string name="adb_features">Функции</string>
+    <string name="adb_premium">Премиум</string>
+    <string name="adb_one_time">Один раз</string>
     <string name="adb_subscription">Подписка</string>
+    <string name="adb_subscriptions">Подписки</string>
     <string name="adb_buy">Купить</string>
     <string name="adb_purchase">Покупка</string>
     <string name="adb_purchases">Покупки</string>
     <string name="adb_subscribe">Подписаться</string>
+    <string name="adb_rent">Арендовать</string>
+    <string name="adb_pre_order">Предварительный заказ</string>
     <string name="adb_active">Активный</string>
+    <string name="adb_purchased">Приобретено</string>
+    <string name="adb_installed">Установлено</string>
     <string name="adb_manage">Удалось</string>
+    <string name="adb_review">Обзор</string>
     <string name="adb_cancel">Отменить</string>
     <string name="adb_change">Изменить</string>
     <string name="adb_migrate">Перенести</string>
 
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        Завершая любую из транзакций, вы соглашаетесь с <a href=\'%2$s\'>условиями</a> <b>%1$s</b>.
+    ]]></string>
+
     <!-- Info -->
+    <string name="adb_premium_info">Разблокируйте больше функций и поддержите разработку.</string>
+    <string name="adb_premium_supported">Разблокируйте больше функций и поддержите разработку.</string>
+    <string name="adb_premium_review">Покупки обновлены. Проверьте или примите соответствующие меры.</string>
+    <string name="adb_one_time_info">Заплатите один раз и сэкономьте на долгосрочном использовании.</string>
+    <string name="adb_one_time_subscription_info">Сначала отмените все активные подписки, чтобы избежать дополнительных расходов.</string>
     <string name="adb_disclaimer_payment">Оплата будет снята с вашей учетной записи Google Play в конце бесплатного пробного периода или подтверждения покупки, если вы не начинаете пробный период.</string>
     <string name="adb_disclaimer_subscription">Подписка будет автоматически продлена, если она не будет отменена по крайней мере за 24 часа до окончания бесплатного пробного периода или текущего периода.</string>
     <string name="adb_disclaimer_renewal">С вашего счета будет взиматься плата за продление в течение 24 часов до окончания текущего периода.</string>
     <string name="adb_disclaimer_cancel">Вы можете управлять подписками или отменить их в любое время в настройках Google Play.</string>
+    <string name="adb_product_external_google_play">Внешний продукт, распространяемый через Google Play.</string>
     <string name="adb_restore_done">Покупки успешно восстановлены.</string>
     <string name="adb_update_done">Покупки успешно обновлены.</string>
     <string name="adb_restore_error">Покупки не найдены.</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">Пожизненно</string>
+    <string name="adb_subs_weekly">Еженедельно</string>
+    <string name="adb_subs_monthly">Ежемесячно</string>
+    <string name="adb_subs_half_yearly">Полугодовой</string>
+    <string name="adb_subs_yearly">Ежегодно</string>
+    <string name="adb_subs_annual">Годовой</string>
 
     <!-- Subscription -->
     <string name="adb_price_day">в день</string>
@@ -54,7 +82,11 @@
     <string name="adb_price_year">в год</string>
     <string name="adb_price_years">за %1$d лет</string>
 
-    <!-- Offers -->
+    <!-- Offer -->
+    <string name="adb_offer_rent">%1$s аренда на %2$s</string>
+    <string name="adb_offer_rent_expiration">%1$s, завершить в течение %2$s.</string>
+    <string name="adb_offer_discount">%1$s%% скидка</string>
+    <string name="adb_offer_validity">Действительно до %1$s</string>
     <string name="adb_offer_free_trial_day">%1$d&#8211;день бесплатной пробной версии</string>
     <string name="adb_offer_free_trial_week">%1$d&#8211;неделя бесплатной пробной версии</string>
     <string name="adb_offer_free_trial_month">%1$d&#8211;месяц бесплатная пробная версия</string>
@@ -67,6 +99,18 @@
     <string name="adb_offer_first_months">за первые %1$d месяцев</string>
     <string name="adb_offer_first_year">за первый год</string>
     <string name="adb_offer_first_years">за первые %1$d лет</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d час</string>
+    <string name="adb_validity_hours">%1$d часа</string>
+    <string name="adb_validity_day">%1$d день</string>
+    <string name="adb_validity_days">%1$d дней</string>
+    <string name="adb_validity_week">%1$d неделю</string>
+    <string name="adb_validity_weeks">%1$d недель</string>
+    <string name="adb_validity_month">%1$d месяц</string>
+    <string name="adb_validity_months">%1$d месяцев</string>
+    <string name="adb_validity_year">%1$d год</string>
+    <string name="adb_validity_years">%1$d лет</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Повторить попытку</string>

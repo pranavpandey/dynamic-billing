@@ -22,27 +22,55 @@
     <string name="adb_payments">Ödemeler</string>
     <string name="adb_restore">Geri yükle</string>
     <string name="adb_product">Ürün</string>
+    <string name="adb_products">Ürünler</string>
     <string name="adb_feature">Özellik</string>
     <string name="adb_features">Özellikler</string>
+    <string name="adb_premium">Premium</string>
+    <string name="adb_one_time">Bir kerelik</string>
     <string name="adb_subscription">Abonelik</string>
+    <string name="adb_subscriptions">Abonelikler</string>
     <string name="adb_buy">Satın al</string>
     <string name="adb_purchase">Satın alma</string>
     <string name="adb_purchases">Satın alınanlar</string>
     <string name="adb_subscribe">Abone ol</string>
+    <string name="adb_rent">Kira</string>
+    <string name="adb_pre_order">Ön sipariş</string>
     <string name="adb_active">Etkin</string>
+    <string name="adb_purchased">Satın alındı</string>
+    <string name="adb_installed">Yüklendi</string>
     <string name="adb_manage">Yönetilen</string>
+    <string name="adb_review">İnceleme</string>
     <string name="adb_cancel">İptal</string>
     <string name="adb_change">Değiştir</string>
     <string name="adb_migrate">Taşıma</string>
 
+    <!-- Format -->
+    <string name="adb_format_terms"><![CDATA[
+        Herhangi bir işlemi tamamlayarak, <b>%1$s\'nin</b> <a href=\'%2$s\'>şartlarını</a> kabul etmiş olursunuz.
+    ]]></string>
+
     <!-- Info -->
+    <string name="adb_premium_info">Daha fazla özelliğin kilidini açın ve geliştirmeyi destekleyin.</string>
+    <string name="adb_premium_supported">Daha fazla özelliğin kilidini açın ve geliştirmeyi destekleyin.</string>
+    <string name="adb_premium_review">Satın alımlar güncellendi. Lütfen inceleyin veya buna göre hareket edin.</string>
+    <string name="adb_one_time_info">Bir kere ödeyin, uzun vadeli kullanımda tasarruf edin.</string>
+    <string name="adb_one_time_subscription_info">Ekstra ücret ödemekten kaçınmak için öncelikle aktif aboneliklerinizi iptal edin.</string>
     <string name="adb_disclaimer_payment">Deneme sürümünü başlatmıyorsanız, ücretsiz denemenin sonunda veya satın alma onayının sonunda ödeme Google Play hesabınızdan tahsil edilecektir.</string>
     <string name="adb_disclaimer_subscription">Abonelik, ücretsiz deneme sürenizin veya mevcut sürenizin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenecektir.</string>
     <string name="adb_disclaimer_renewal">Cari dönemin bitiminden 24 saat önce hesabınızdan yenileme ücreti alınacaktır.</string>
     <string name="adb_disclaimer_cancel">Abonelikleri istediğiniz zaman Google Play ayarlarından yönetebilir veya iptal edebilirsiniz.</string>
+    <string name="adb_product_external_google_play">Google Play üzerinden dağıtılan harici bir üründür.</string>
     <string name="adb_restore_done">Satın alınanlar başarıyla geri yüklendi.</string>
     <string name="adb_update_done">Satın alınanlar başarıyla güncellendi.</string>
     <string name="adb_restore_error">Satın alma bulunamadı.</string>
+
+    <!-- Product -->
+    <string name="adb_inapp_lifetime">Ömür boyu</string>
+    <string name="adb_subs_weekly">Haftalık</string>
+    <string name="adb_subs_monthly">Aylık</string>
+    <string name="adb_subs_half_yearly">Yarım Yıllık</string>
+    <string name="adb_subs_yearly">Yıllık</string>
+    <string name="adb_subs_annual">Yıllık</string>
 
     <!-- Subscription -->
     <string name="adb_price_day">günlük</string>
@@ -54,7 +82,11 @@
     <string name="adb_price_year">yıllık</string>
     <string name="adb_price_years">%1$d yılda bir</string>
 
-    <!-- Offers -->
+    <!-- Offer -->
+    <string name="adb_offer_rent">%1$s için %2$s kiralama</string>
+    <string name="adb_offer_rent_expiration">%1$s, %2$s içinde bitir.</string>
+    <string name="adb_offer_discount">%1$s%% indirim</string>
+    <string name="adb_offer_validity">%1$s tarihine kadar geçerlidir</string>
     <string name="adb_offer_free_trial_day">%1$d&#8211;günlük ücretsiz deneme</string>
     <string name="adb_offer_free_trial_week">%1$d&#8211;haftalık ücretsiz deneme</string>
     <string name="adb_offer_free_trial_month">%1$d&#8211;aylık ücretsiz deneme</string>
@@ -67,6 +99,18 @@
     <string name="adb_offer_first_months">ilk %1$d ay için</string>
     <string name="adb_offer_first_year">ilk yıl için</string>
     <string name="adb_offer_first_years">ilk %1$d yıl için</string>
+
+    <!-- Validity -->
+    <string name="adb_validity_hour">%1$d saat</string>
+    <string name="adb_validity_hours">%1$d saat</string>
+    <string name="adb_validity_day">%1$d gün</string>
+    <string name="adb_validity_days">%1$d gün</string>
+    <string name="adb_validity_week">%1$d hafta</string>
+    <string name="adb_validity_weeks">%1$d hafta</string>
+    <string name="adb_validity_month">%1$d ay</string>
+    <string name="adb_validity_months">%1$d ay</string>
+    <string name="adb_validity_year">%1$d yıl</string>
+    <string name="adb_validity_years">%1$d yıl</string>
 
     <!-- Error -->
     <string name="adb_error_retry">Yeniden dene</string>

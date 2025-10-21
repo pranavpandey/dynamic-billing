@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-	Copyright Google Inc.
+	Copyright 2022-2025 Pranav Pandey
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -15,15 +15,9 @@
 	limitations under the License.
 -->
 
-<vector
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+<resources>
 
-    <path
-        android:fillColor="@android:color/white"
-        android:pathData="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-0.9 2-2 2H4c-1.1 0-2-0.9-2-2v-8c0-1.1 0.9-2 2-2h16c1.1 0 2 0.9 2 2zm-6 4l-6-3.27v6.53L16 16z" />
+    <!-- URL -->
+    <string name="adb_url_terms" />
 
-</vector>
+</resources>
